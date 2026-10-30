@@ -1,0 +1,119 @@
+{
+  "success": true,
+  "data": {
+    "insights": [
+      {
+        "id": "insight-123",
+        "tenantId": "tenant-456",
+        "vehicleId": "vehicle-789",
+        "vehicle": {
+          "id": "vehicle-789",
+          "name": "Toyota Corolla 2023"
+        },
+        "type": "underpriced",
+        "severity": "warning",
+        "status": "active",
+        "title": "Vehicle Underpriced",
+        "reasoning": "Current price (150.00) is 20.0% below market average (187.50). With 85.5% occupancy, there's room to increase pricing. Recommended price: 178.13.",
+        "currentPrice": 150.00,
+        "recommendedPrice": 178.13,
+        "marketAveragePrice": 187.50,
+        "occupancyRate": 85.5,
+        "analysisStartDate": "2024-01-01",
+        "analysisEndDate": "2024-03-31",
+        "createdAt": "2024-04-01T10:00:00.000Z"
+      },
+      {
+        "id": "insight-124",
+        "tenantId": "tenant-456",
+        "vehicleId": "vehicle-790",
+        "vehicle": {
+          "id": "vehicle-790",
+          "name": "BMW 3 Series 2024"
+        },
+        "type": "idle_vehicle",
+        "severity": "critical",
+        "status": "active",
+        "title": "Vehicle Idle for 45 Days",
+        "reasoning": "This vehicle has been idle for 45 days with only 8.2% occupancy rate. Consider promotional pricing, relocation to a higher-demand location, or temporary removal from inventory.",
+        "occupancyRate": 8.2,
+        "idleDays": 45,
+        "analysisStartDate": "2024-01-01",
+        "analysisEndDate": "2024-03-31",
+        "createdAt": "2024-04-01T10:00:00.000Z"
+      },
+      {
+        "id": "insight-125",
+        "tenantId": "tenant-456",
+        "vehicleId": "vehicle-791",
+        "vehicle": {
+          "id": "vehicle-791",
+          "name": "Mercedes C-Class 2023"
+        },
+        "type": "high_demand",
+        "severity": "info",
+        "status": "active",
+        "title": "High Demand Periods Detected",
+        "reasoning": "Vehicle shows 92.3% occupancy with 12 high-demand dates identified in the next 30 days. Consider dynamic pricing for these periods.",
+        "occupancyRate": 92.3,
+        "demandScore": 92.3,
+        "suggestedDates": [
+          {
+            "date": "2024-04-15",
+            "expectedDemand": 95.0,
+            "recommendedPrice": 250.00,
+            "reason": "Historical data shows 95.0% average occupancy on this date"
+          },
+          {
+            "date": "2024-04-20",
+            "expectedDemand": 88.5,
+            "recommendedPrice": 240.00,
+            "reason": "Historical data shows 88.5% average occupancy on this date"
+          }
+        ],
+        "analysisStartDate": "2024-04-01",
+        "analysisEndDate": "2024-04-30",
+        "createdAt": "2024-04-01T10:00:00.000Z"
+      },
+      {
+        "id": "insight-126",
+        "tenantId": "tenant-456",
+        "vehicleId": "vehicle-792",
+        "vehicle": {
+          "id": "vehicle-792",
+          "name": "Audi A4 2023"
+        },
+        "type": "seasonal_trend",
+        "severity": "info",
+        "status": "active",
+        "title": "Seasonal Demand Pattern Detected",
+        "reasoning": "Historical data shows peak demand in Jun, Jul, Aug with average occupancy above 80.0%. Consider adjusting pricing strategy for these months.",
+        "contextData": {
+          "peakMonths": [
+            { "month": 6, "avgOccupancy": 92.5 },
+            { "month": 7, "avgOccupancy": 95.2 },
+            { "month": 8, "avgOccupancy": 88.7 }
+          ]
+        },
+        "analysisStartDate": "2023-04-01",
+        "analysisEndDate": "2024-03-31",
+        "createdAt": "2024-04-01T10:00:00.000Z"
+      }
+    ],
+    "summary": {
+      "totalInsights": 4,
+      "byType": {
+        "underpriced": 1,
+        "idle_vehicle": 1,
+        "high_demand": 1,
+        "seasonal_trend": 1
+      },
+      "bySeverity": {
+        "critical": 1,
+        "warning": 1,
+        "info": 2
+      }
+    }
+  }
+}
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiralama Sözleşmesi - {{reference}}</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #111; line-height: 1.35; background: #fff; padding: 12px; }
+    .header { text-align: center; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #c45a2e; }
+    .company-name { font-size: 18px; font-weight: bold; color: #c45a2e; margin-bottom: 4px; }
+    .company-name span { display: block; font-size: 12px; color: #333; font-weight: normal; }
+    .contact { font-size: 10px; color: #444; margin-top: 4px; }
+    .emergency { margin-top: 6px; padding: 4px 8px; background: #fee; border: 1px solid #c45a2e; display: inline-block; font-weight: bold; }
+    .emergency-num { font-size: 16px; color: #c00; }
+    .doc-title { font-size: 14px; font-weight: bold; margin: 10px 0 4px; }
+    .seri-no { font-size: 11px; margin-bottom: 8px; }
+    .seri-hint { font-size: 9px; color: #666; }
+    .two-cols { display: table; width: 100%; margin-top: 8px; }
+    .col { display: table-cell; width: 50%; vertical-align: top; padding: 0 8px 0 0; }
+    .col + .col { padding: 0 0 0 8px; }
+    .field-row { margin-bottom: 6px; display: table; width: 100%; }
+    .field-label { display: table-cell; width: 100px; font-weight: 600; font-size: 10px; vertical-align: top; }
+    .field-value { display: table-cell; border-bottom: 1px solid #333; min-height: 16px; padding: 0 4px; }
+    .field-value.empty { color: #999; }
+    .section-title { font-size: 11px; font-weight: bold; margin: 12px 0 6px; padding-bottom: 2px; border-bottom: 1px solid #ccc; }
+    .fuel-boxes { margin: 6px 0; font-size: 9px; }
+    .fuel-boxes span { display: inline-block; width: 28px; text-align: center; border: 1px solid #333; padding: 2px 4px; margin: 0 2px; }
+    .damage-diagram { margin: 8px 0; text-align: center; }
+    .damage-diagram svg { max-width: 180px; height: auto; }
+    .damage-num { font-size: 9px; fill: #333; }
+    .insurance-note { font-size: 9px; background: #f9f9f9; padding: 6px; margin: 6px 0; border: 1px solid #ddd; }
+    .checkbox-inline { display: inline-block; margin-right: 12px; }
+    .signature-line { border-bottom: 1px solid #333; margin-top: 24px; min-height: 20px; }
+    .signature-label { font-size: 9px; color: #666; margin-top: 2px; }
+    .footer-rules { margin-top: 16px; font-size: 9px; border: 1px solid #ddd; padding: 8px; background: #fafafa; }
+    .footer-rules p { margin-bottom: 4px; }
+    .warning { font-weight: bold; margin-top: 8px; }
+    @media print { body { padding: 8px; } .two-cols { page-break-inside: avoid; } }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="company-name">{{companyName}}<span>{{company_website}}</span></div>
+    <div class="contact">
+      GSM: {{gsm}} &nbsp; Tel: {{company_phone}}<br>
+      {{company_address}}
+    </div>
+    <div class="emergency">ACİL ÇAĞRI MERKEZİ / EMERGENCY CALL <span class="emergency-num">112</span></div>
+    <div class="doc-title">MIETVERTRAG / AGREEMENT</div>
+    <div class="seri-no">Seri No: <strong>{{seri_no}}</strong></div>
+    <div class="seri-hint">Kira sözleşme No. Bu numarayı bütün yazışmalarda belirtiniz. Minimum kiralama bir gündür.</div>
+  </div>
+
+  <div class="two-cols">
+    <div class="col">
+      <div class="section-title">Tarih / Araç</div>
+      <div class="field-row"><span class="field-label">Date IN / Tarih ÇIKIŞ</span><span class="field-value">{{date_in}}</span></div>
+      <div class="field-row"><span class="field-label">Date OUT / Tarih DÖNÜŞ</span><span class="field-value">{{date_out}}</span></div>
+      <div class="field-row"><span class="field-label">Time / Süre</span><span class="field-value">{{duration}} gün</span></div>
+      <div class="field-row"><span class="field-label">Plate No / Plaka No</span><span class="field-value">{{plate_no}}</span></div>
+      <div class="field-row"><span class="field-label">Car Code / Araç Kodu</span><span class="field-value">{{car_code}}</span></div>
+      <div class="field-row"><span class="field-label">Döneceği İstasyon</span><span class="field-value empty"></span></div>
+      <div class="field-row"><span class="field-label">Araç Değişikliği</span><span class="field-value empty"></span></div>
+
+      <div class="field-row" style="margin-top:8px"><span class="field-label">Yakıt</span><span class="field-value">Benzin ☐ Diesel ☐</span></div>
+      <div class="fuel-boxes">In: ☐ R: ☐ 1/4: ☐ 1/2: ☐ 3/4: ☐ 4/4: ☐ Out: ☐</div>
+
+      <div class="section-title">Araç Hasar Diyagramı</div>
+      <div class="damage-diagram">
+        <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+          <rect x="30" y="10" width="60" height="40" rx="4" fill="none" stroke="#333" stroke-width="1"/>
+          <rect x="40" y="18" width="20" height="12" fill="none" stroke="#333" stroke-width="0.8"/>
+          <rect x="60" y="18" width="20" height="12" fill="none" stroke="#333" stroke-width="0.8"/>
+          <text x="50" y="8" class="damage-num" text-anchor="middle">1</text>
+          <text x="70" y="8" class="damage-num" text-anchor="middle">2</text>
+          <text x="90" y="25" class="damage-num" text-anchor="middle">3</text>
+          <text x="90" y="42" class="damage-num" text-anchor="middle">4</text>
+          <text x="70" y="55" class="damage-num" text-anchor="middle">5</text>
+          <text x="50" y="55" class="damage-num" text-anchor="middle">6</text>
+          <text x="30" y="42" class="damage-num" text-anchor="middle">7</text>
+          <text x="30" y="25" class="damage-num" text-anchor="middle">8</text>
+          <text x="60" y="35" class="damage-num" text-anchor="middle">9</text>
+        </svg>
+      </div>
+
+      <div class="section-title">CDW INSURANCE / CAM FAR SİGORTASI</div>
+      <div class="insurance-note">
+        INSURANCE DOES NOT COVER TYRE PUNCTURES, WINDSCREEN OR HEAD LIGHT BREAKAGES, THEFT OF SPARE TYRE AND DAMAGES DUE TO MUSIC OF CAR (CA 10.-€)<br>
+        GLASBRUCH UND REIFEN SIND NICHT IN DER VERSICHERUNG INBEGRIFFEN. ABER MAN KANN SIE DURCHAUS IN EINEM EXTRA-VERTRAG ABSCHLIESSEN (CA 10.-€)
+      </div>
+      <div class="checkbox-inline">YES / EVET ☐</div><div class="checkbox-inline">NO / HAYIR ☐</div>
+      <div class="field-row" style="margin-top:10px"><span class="field-label">CDW Insurance</span><span class="field-value empty"></span></div>
+      <div class="field-row"><span class="field-label">Cam, Far, Sigorta</span><span class="field-value empty"></span></div>
+      <div class="field-row"><span class="field-label">Kasko Sigorta</span><span class="field-value empty"></span></div>
+      <div class="field-row"><span class="field-label">K.D.V. %</span><span class="field-value empty"></span></div>
+      <div class="field-row"><span class="field-label">Brüt Toplam</span><span class="field-value">{{gross_total}}</span></div>
+    </div>
+
+    <div class="col">
+      <div class="section-title">Sürücü / Driver</div>
+      <div class="field-row"><span class="field-label">Adı / Name</span><span class="field-value">{{adi}}</span></div>
+      <div class="field-row"><span class="field-label">Soyadı / Surname</span><span class="field-value">{{soyadi}}</span></div>
+      <div class="field-row"><span class="field-label">TC No / Passport No</span><span class="field-value">{{tc_no}}</span></div>
+      <div class="field-row"><span class="field-label">Doğum Yeri - Tarih</span><span class="field-value">{{dogum_yeri_tarih}}</span></div>
+      <div class="field-row"><span class="field-label">Ehliyet No / Licence No</span><span class="field-value">{{ehliyet_no}}</span></div>
+      <div class="field-row"><span class="field-label">Verildiği Yer - Tarih</span><span class="field-value">{{verildigi_yer_tarih}}</span></div>
+      <div class="field-row"><span class="field-label">Tel</span><span class="field-value">{{tel}}</span></div>
+      <div class="field-row"><span class="field-label">Ev Adresi / Hotel</span><span class="field-value">{{ev_adresi}}</span></div>
+      <div class="signature-line"></div>
+      <div class="signature-label">İmza / Signature - Tarih / Date: ______________</div>
+
+      <div class="section-title">Ödeme / Payment</div>
+      <div class="checkbox-inline">Visa Card ☐</div><div class="checkbox-inline">Master Card ☐</div><div class="checkbox-inline">American Express ☐</div>
+      <div class="field-row" style="margin-top:6px"><span class="field-label">Güvenlik No / CVV</span><span class="field-value empty"></span></div>
+      <div class="field-row"><span class="field-label">Geçerlilik Tarihi</span><span class="field-value empty"></span></div>
+      <div class="signature-line" style="margin-top:12px"></div>
+      <div class="signature-label">Kart Hamili İmzası / Signature</div>
+
+      <div class="section-title">Ek Sürücü / Additional Driver</div>
+      <div class="field-row"><span class="field-label">Ad Soyad</span><span class="field-value empty"></span></div>
+      <div class="field-row"><span class="field-label">TC / Passport No</span><span class="field-value empty"></span></div>
+      <div class="field-row"><span class="field-label">Ehliyet No</span><span class="field-value empty"></span></div>
+      <div class="field-row"><span class="field-label">Tel / Adres</span><span class="field-value empty"></span></div>
+    </div>
+  </div>
+
+  <div class="footer-rules">
+    <p>Yandaki İmzamla, bu sözleşme tarihleri arasında kiralamış olduğum araçla ilgili kullanımdan kaynaklanan hasarları, Trafik ve park cezalarımı, uzatma bedellerini ve sözleşmenin arkasındaki koşulları kabul ettiğimi beyan ederim.</p>
+    <p><strong>Teslim Eden:</strong> _______________________ &nbsp; <strong>Teslim Alan:</strong> _______________________</p>
+    <p>Sözleşmenin ön ve arka sayfalarında belirtilen şartları tamamen kabul ederim. (Alkollü Araç Kullanmamak, Hız Limitlerine Uymak, Tüm Trafik Kurallarına Uymak)</p>
+    <p>YANLIŞ YERE PARK VE TRAFİK CEZALARI KİRALAYANA AİTTİR.</p>
+    <p class="warning">DİKKAT! WARNING! ACHTUNG! KAZA VE HASAR HALİNDE ARACI YERİNDEN HAREKET ETTİRMEDEN POLİS VE ALKOL RAPORU ALINIZ.</p>
+    <p>Herhangi bir kaza durumunda aracın tekrar kiraya hazır olmasına kadar geçen süre belirlenen kira bedeli üzerinden kiracı tarafından ödenir.</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+{
+  "listing": {
+    "id": "listing-123",
+    "tenantId": "tenant-provider-456",
+    "tenant": {
+      "id": "tenant-provider-456",
+      "name": "Premium Transfer Services"
+    },
+    "title": "Airport Transfer Service",
+    "description": "Professional airport transfer service with luxury vehicles",
+    "serviceType": "transfer",
+    "commissionType": "percentage",
+    "commissionRate": 15.0,
+    "commissionFixed": null,
+    "minCommission": 50.0,
+    "maxCommission": 500.0,
+    "basePrice": 200.0,
+    "currencyCode": "TRY",
+    "status": "active",
+    "isAvailable": true,
+    "totalBookings": 45,
+    "totalRevenue": 9000.0,
+    "averageRating": 4.8
+  },
+  "agreement": {
+    "id": "agreement-789",
+    "providerTenantId": "tenant-provider-456",
+    "consumerTenantId": "tenant-consumer-789",
+    "listingId": "listing-123",
+    "commissionType": "percentage",
+    "commissionRate": 15.0,
+    "status": "active",
+    "activatedAt": "2024-01-15T10:00:00.000Z",
+    "totalTransactions": 12,
+    "totalCommissionPaid": 1800.0,
+    "totalCommissionEarned": 1800.0
+  },
+  "transaction": {
+    "id": "transaction-abc",
+    "providerTenantId": "tenant-provider-456",
+    "consumerTenantId": "tenant-consumer-789",
+    "agreementId": "agreement-789",
+    "reservationId": "reservation-xyz",
+    "type": "commission_earned",
+    "status": "processed",
+    "transactionAmount": 200.0,
+    "commissionAmount": 30.0,
+    "currencyCode": "TRY",
+    "commissionType": "percentage",
+    "commissionRate": 15.0,
+    "transactionDate": "2024-01-20",
+    "processedAt": "2024-01-20T10:30:00.000Z",
+    "description": "15% of 200.0 = 30.0",
+    "referenceNumber": "TXN-2024-001"
+  },
+  "commissionCalculation": {
+    "agreementId": "agreement-789",
+    "transactionAmount": 200.0,
+    "result": {
+      "commissionAmount": 30.0,
+      "commissionType": "percentage",
+      "commissionRate": 15.0,
+      "calculationDetails": "15% of 200.0 = 30.0"
+    }
+  }
+}
+

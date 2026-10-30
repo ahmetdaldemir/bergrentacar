@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "message": "Damage detection completed",
+  "data": {
+    "id": "abc123-def456",
+    "tenantId": "tenant-123",
+    "vehicleId": "vehicle-456",
+    "reservationId": "reservation-789",
+    "checkinPhotoUrls": [
+      "/uploads/checkin-2024-01-15-10-00-00-front.jpg",
+      "/uploads/checkin-2024-01-15-10-00-00-back.jpg"
+    ],
+    "checkoutPhotoUrls": [
+      "/uploads/checkout-2024-01-25-16-00-00-front.jpg",
+      "/uploads/checkout-2024-01-25-16-00-00-back.jpg"
+    ],
+    "damageProbability": 65.5,
+    "confidenceScore": 72.3,
+    "status": "completed",
+    "damagedAreas": [
+      {
+        "x": 0.15,
+        "y": 0.25,
+        "width": 0.08,
+        "height": 0.12,
+        "confidence": 85.5,
+        "type": "scratch"
+      },
+      {
+        "x": 0.45,
+        "y": 0.60,
+        "width": 0.10,
+        "height": 0.15,
+        "confidence": 72.0,
+        "type": "dent"
+      }
+    ],
+    "differenceImageUrl": "/uploads/damage-diff-abc123-def456-1706184000000.jpg",
+    "processingMetadata": {
+      "pixelDifference": 8.5,
+      "edgeDifference": 12.3,
+      "processingTime": 1250,
+      "imageDimensions": {
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    "verifiedByUserId": null,
+    "verifiedAt": null,
+    "verificationNotes": null,
+    "errorMessage": null,
+    "createdAt": "2024-01-25T16:00:00.000Z",
+    "updatedAt": "2024-01-25T16:00:15.000Z"
+  }
+}
+

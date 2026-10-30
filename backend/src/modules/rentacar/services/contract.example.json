@@ -1,0 +1,85 @@
+{
+  "success": true,
+  "data": {
+    "id": "contract-abc123",
+    "tenantId": "tenant-123",
+    "templateId": "template-456",
+    "vehicleId": "vehicle-789",
+    "reservationId": "reservation-012",
+    "contractNumber": "CNT-2024-ABC123",
+    "status": "signed",
+    "content": {
+      "sections": [
+        {
+          "id": "header",
+          "type": "header",
+          "title": "Sözleşme Başlığı",
+          "content": "<h1>ARAÇ KİRALAMA SÖZLEŞMESİ</h1>",
+          "order": 1
+        },
+        {
+          "id": "parties",
+          "type": "custom",
+          "title": "Taraflar",
+          "content": "<p><strong>KİRAYA VEREN:</strong> ABC Rent A Car<br><strong>KİRALAYAN:</strong> Ahmet Yılmaz</p>",
+          "order": 2
+        },
+        {
+          "id": "vehicle-info",
+          "type": "custom",
+          "title": "Araç Bilgileri",
+          "content": "<p><strong>Araç:</strong> Toyota Corolla<br><strong>Plaka:</strong> 34 ABC 123</p>",
+          "order": 3
+        },
+        {
+          "id": "rental-terms",
+          "type": "legal_core",
+          "title": "Kiralama Koşulları",
+          "content": "<p>Bu sözleşme, araç kiralama işlemlerine ilişkin yasal hükümleri içermektedir...</p>",
+          "order": 4
+        }
+      ],
+      "variables": {
+        "companyName": "ABC Rent A Car",
+        "customerName": "Ahmet Yılmaz",
+        "vehicleName": "Toyota Corolla",
+        "plateNumber": "34 ABC 123",
+        "contractNumber": "CNT-2024-ABC123",
+        "date": "15.01.2024"
+      },
+      "styling": {
+        "logoUrl": "/uploads/logo.png",
+        "primaryColor": "#1976D2",
+        "secondaryColor": "#42A5F5",
+        "textColor": "#000000"
+      }
+    },
+    "customerSignature": {
+      "signerName": "Ahmet Yılmaz",
+      "signerEmail": "ahmet@example.com",
+      "signerPhone": "+905551234567",
+      "signatureImage": "data:image/png;base64,iVBORw0KG...",
+      "signedAt": "2024-01-15T10:30:00.000Z",
+      "ipAddress": "192.168.1.1",
+      "userAgent": "Mozilla/5.0..."
+    },
+    "companySignature": {
+      "signerName": "Mehmet Demir",
+      "signatureImage": "data:image/png;base64,iVBORw0KG...",
+      "signedAt": "2024-01-15T10:31:00.000Z"
+    },
+    "signedAt": "2024-01-15T10:31:00.000Z",
+    "pdfUrl": "/uploads/contract-CNT-2024-ABC123-1705314000000.pdf",
+    "pdfGeneratedAt": "2024-01-15T10:32:00.000Z",
+    "emailSent": true,
+    "emailSentAt": "2024-01-15T10:33:00.000Z",
+    "whatsappSent": false,
+    "customerName": "Ahmet Yılmaz",
+    "customerEmail": "ahmet@example.com",
+    "customerPhone": "+905551234567",
+    "customerIdNumber": "12345678901",
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:33:00.000Z"
+  }
+}
+

@@ -1,0 +1,109 @@
+# Dependencies
+node_modules/
+**/node_modules/
+package-lock.json
+yarn.lock
+.deploy.local
+deploy/targets.env
+deploy/registry.env
+# Build outputs
+dist/
+**/dist/
+build/
+**/build/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+!backend/.env
+!frontend/.env
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE and local agent tools
+.vscode/
+.idea/
+.cursor/
+.continue/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Tenant data backup (customer data, not for git)
+backups/
+
+# Uploads (production data)
+uploads/
+**/uploads/*
+!**/uploads/.gitkeep
+backend/public/uploads/*
+backend/dist/public/uploads/*
+!backend/public/uploads/.gitkeep
+
+# Mobile
+mobile/.expo/
+mobile/dist/
+mobile/web-build/
+mobile/*.apk
+mobile/*.aab
+mobile/*.ipa
+
+# Secrets and credentials
+*.pem
+*.key
+*.cert
+*.crt
+secrets/
+credentials/
+
+# Deployment
+deploy.sh.bak
+*.local
+.deploy_images/
+**/.deploy_images/
+.deploy_artifacts/
+**/.deploy_artifacts/
+*.tar
+*.tar.gz

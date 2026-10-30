@@ -1,0 +1,36 @@
+FROM node:20-slim
+WORKDIR /app
+ENV NODE_ENV=production
+ENV PUPPETEER_SKIP_DOWNLOAD=true
+
+# Docker CLI ve PostgreSQL client
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    curl \
+    gnupg \
+    postgresql-client \
+    && install -m 0755 -d /etc/apt/keyrings \
+    && curl -fsSL https://download.docker.com/linux/debian/gpg \
+       | gpg --dearmor -o /etc/apt/keyrings/docker.gpg \
+    && chmod a+r /etc/apt/keyrings/docker.gpg \
+    && echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] \
+       https://download.docker.com/linux/debian \
+       $(. /etc/os-release && echo "$VERSION_CODENAME") stable" \
+       | tee /etc/apt/sources.list.d/docker.list > /dev/null \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends docker-ce-cli \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY package-lock.json package.json ./
+
+RUN npm ci --omit=dev --prefer-offline --no-audit --no-fund --unsafe-perm \
+    && npm uninstall sharp \
+    && npm install --platform=linux --arch=arm64 sharp@0.34.5 \
+    && npm cache clean --force
+
+# Pre-built dist/ — build on CI/CD, not on server
+COPY dist ./dist
+COPY public ./public
+RUN mkdir -p public/uploads
+EXPOSE 3000
+CMD ["node", "dist/server.js"]

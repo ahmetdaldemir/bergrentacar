@@ -1,0 +1,131 @@
+import os
+import requests
+from pathlib import Path
+from typing import List
+
+# ======================
+# CONFIG
+# ======================
+RAG_API_URL = "http://127.0.0.1:8000/add"
+
+ALLOWED_EXTENSIONS = {
+    ".ts", ".tsx", ".js", ".jsx",
+    ".py", ".go", ".java",
+    ".json", ".yml", ".yaml",
+    ".md"
+}
+
+MAX_CHUNK_SIZE = 1200  # karakter
+ENCODING = "utf-8"
+
+# ======================
+# UTILS
+# ======================
+def is_code_file(path: Path) -> bool:
+    return path.suffix.lower() in ALLOWED_EXTENSIONS
+
+
+def read_file_safe(path: Path) -> str:
+    try:
+        return path.read_text(encoding=ENCODING)
+    except Exception as e:
+        print(f"[SKIP] {path} -> {e}")
+        return ""
+
+
+def chunk_text(text: str, max_size: int) -> List[str]:
+    chunks = []
+    current = ""
+
+    for line in text.splitlines():
+        if len(current) + len(line) > max_size:
+            chunks.append(current)
+            current = line + "\n"
+        else:
+            current += line + "\n"
+
+    if current.strip():
+        chunks.append(current)
+
+    return chunks
+
+
+def send_to_rag(text: str, source: str, metadata: dict):
+    payload = {
+        "text": text,
+        "source": source,
+        "metadata": metadata
+    }
+
+    res = requests.post(RAG_API_URL, json=payload)
+
+    if res.status_code != 200:
+        print(f"[ERROR] RAG rejected chunk from {source}")
+    else:
+        print(f"[OK] Indexed: {source}")
+
+
+# ======================
+# CORE LOGIC
+# ======================
+def index_folder(folder_path: str, module_name: str):
+    base = Path(folder_path)
+
+    if not base.exists():
+        raise RuntimeError(f"Folder not found: {folder_path}")
+
+    print(f"\n📦 Indexing folder: {base.resolve()}\n")
+
+    # 1️⃣ entry point first
+    priority_files = ["index.ts", "index.tsx", "main.ts", "app.ts"]
+
+    files: List[Path] = []
+
+    for name in priority_files:
+        p = base / name
+        if p.exists():
+            files.append(p)
+
+    # 2️⃣ rest of files
+    for path in base.rglob("*"):
+        if path.is_file() and is_code_file(path):
+            if path not in files:
+                files.append(path)
+
+    # 3️⃣ process files
+    for file_path in files:
+        content = read_file_safe(file_path)
+        if not content.strip():
+            continue
+
+        chunks = chunk_text(content, MAX_CHUNK_SIZE)
+
+        for i, chunk in enumerate(chunks):
+            metadata = {
+                "module": module_name,
+                "file": str(file_path.relative_to(base)),
+                "chunk_index": i,
+                "total_chunks": len(chunks),
+                "language": file_path.suffix.replace(".", "")
+            }
+
+            send_to_rag(
+                text=chunk,
+                source=f"{module_name}:{file_path.name}",
+                metadata=metadata
+            )
+
+
+# ======================
+# CLI
+# ======================
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Index project folder into RAG")
+    parser.add_argument("--path", required=True, help="Folder path")
+    parser.add_argument("--module", required=True, help="Module name (semantic label)")
+
+    args = parser.parse_args()
+
+    index_folder(args.path, args.module)

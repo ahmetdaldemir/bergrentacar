@@ -1,0 +1,49 @@
+/* Google Places Autocomplete Custom Styles */
+
+/* Make dropdown items clickable with pointer cursor */
+.pac-container {
+  z-index: 9999 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  margin-top: 4px !important;
+  font-family: inherit !important;
+}
+
+.pac-item {
+  cursor: pointer !important;
+  padding: 8px 12px !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  transition: background-color 0.15s ease !important;
+}
+
+.pac-item:hover {
+  background-color: #f3f4f6 !important;
+}
+
+.pac-item-selected,
+.pac-item:active {
+  background-color: #e5e7eb !important;
+}
+
+.pac-item-query {
+  font-size: 14px !important;
+  color: #111827 !important;
+  font-weight: 500 !important;
+}
+
+.pac-matched {
+  font-weight: 600 !important;
+  color: #ea580c !important;
+}
+
+.pac-icon {
+  margin-top: 4px !important;
+}
+
+/* Fix for mobile touch */
+.pac-item {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  user-select: none;
+  -webkit-user-select: none;
+}

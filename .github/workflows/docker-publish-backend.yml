@@ -1,0 +1,65 @@
+# Backend imajını GHCR'ye push eder.
+#
+# Tetikleyiciler:
+#   - main'e push (sadece backend veya bu workflow değişince) → otomatik build + push
+#   - Actions → "Publish backend Docker image" → Run workflow (elle tag)
+#
+# Secrets: GHCR için GITHUB_TOKEN yeterli (packages: write).
+#
+name: Publish backend Docker image
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'backend/**'
+      - '.github/workflows/docker-publish-backend.yml'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Image tag (örn. v1.0.0 veya git sha kısaltması)'
+        required: true
+        default: 'latest'
+
+env:
+  REGISTRY: ghcr.io
+  # GHCR küçük harf: owner/saas-tour-backend
+  IMAGE_LOWER: ghcr.io/${{ github.repository_owner }}/saas-tour-backend
+
+jobs:
+  build-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Resolve image tag
+        id: meta
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "tag=${{ github.event.inputs.tag }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "tag=${GITHUB_SHA:0:7}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: ./backend
+          file: ./backend/Dockerfile
+          push: true
+          tags: |
+            ${{ env.IMAGE_LOWER }}:${{ steps.meta.outputs.tag }}
+            ${{ env.IMAGE_LOWER }}:latest
+          build-args: |
+            INSTALL_DOCKER_CLI=0

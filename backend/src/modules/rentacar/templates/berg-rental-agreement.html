@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kira Sözleşmesi - {{reference}}</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    @page { size: A4; margin: 8mm; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 9px;
+      color: #1a237e;
+      line-height: 1.25;
+      background: #fff;
+      padding: 6px 10px;
+      max-height: 100%;
+      overflow: hidden;
+    }
+    .contract-page {
+      max-height: 277mm;
+      overflow: hidden;
+    }
+    .header { display: table; width: 100%; margin-bottom: 4px; padding-bottom: 4px; border-bottom: 2px solid #1a237e; }
+    .header-left { display: table-cell; width: 48%; vertical-align: top; }
+    .header-right { display: table-cell; width: 52%; vertical-align: top; text-align: right; }
+    .company-name { font-size: 14px; font-weight: bold; color: #1a237e; margin-bottom: 1px; }
+    .contact { font-size: 8px; color: #333; line-height: 1.3; }
+    .doc-title { font-size: 12px; font-weight: bold; color: #1a237e; margin-bottom: 2px; }
+    .emergency-row { font-size: 8px; margin-top: 2px; }
+    .emergency-row span { display: inline-block; margin-left: 6px; }
+    .accessories { font-size: 8px; margin-top: 4px; text-align: left; }
+    .accessories label { display: inline-block; margin-right: 8px; }
+    .notice-box { margin-top: 4px; font-size: 8px; border: 1px solid #1a237e; padding: 2px 5px; display: inline-block; }
+    .two-cols { display: table; width: 100%; margin-top: 4px; border-collapse: separate; border-spacing: 0 0; page-break-inside: avoid; }
+    .col { display: table-cell; width: 50%; vertical-align: top; padding: 0 8px 0 0; }
+    .col + .col { padding: 0 0 0 8px; }
+    .field-row { margin-bottom: 3px; }
+    .field-label { font-size: 8px; font-weight: 600; color: #1a237e; margin-bottom: 0; }
+    .field-value { border-bottom: 1px solid #1a237e; min-height: 12px; padding: 0 2px; font-size: 9px; }
+    .field-value.empty { color: #999; }
+    .section-title { font-size: 9px; font-weight: bold; color: #1a237e; margin: 4px 0 2px; padding-bottom: 1px; border-bottom: 1px solid #1a237e; }
+    .insurance-note { font-size: 7px; background: #f5f5f5; padding: 3px 4px; margin: 2px 0; border: 1px solid #ccc; line-height: 1.3; }
+    .checkbox-inline { display: inline-block; margin-right: 10px; }
+    .km-boxes { display: inline-block; letter-spacing: 1px; font-family: monospace; font-size: 8px; border: 1px solid #1a237e; padding: 1px 4px; }
+    .fuel-gauge { margin: 2px 0; font-size: 8px; }
+    .fuel-gauge .scale { letter-spacing: 0.5px; }
+    .signature-line { border-bottom: 1px solid #1a237e; margin-top: 10px; min-height: 14px; }
+    .signature-label { font-size: 7px; color: #666; margin-top: 0; }
+    .card-boxes { display: inline-block; letter-spacing: 2px; font-family: monospace; font-size: 10px; border: 1px solid #1a237e; padding: 1px 3px; }
+    .summary-table { width: 100%; font-size: 8px; margin-top: 2px; }
+    .summary-table td { padding: 1px 0; border-bottom: 1px solid #eee; }
+    .summary-table .total-row { font-weight: bold; font-size: 9px; }
+    .damage-diagram { margin: 4px 0; text-align: center; }
+    .damage-diagram svg { max-width: 140px; height: auto; }
+    .damage-num { font-size: 7px; fill: #1a237e; }
+    .footer-rules { margin-top: 6px; font-size: 7px; border: 1px solid #1a237e; padding: 4px; background: #fafafa; page-break-inside: avoid; }
+    .footer-rules .col-titles { font-weight: bold; margin-bottom: 2px; }
+    .footer-rules p { margin-bottom: 2px; line-height: 1.35; }
+    .final-block { margin-top: 6px; padding: 5px; border: 1px solid #1a237e; page-break-inside: avoid; }
+    .final-block .field-row { margin-bottom: 3px; }
+    .final-block p { font-size: 8px; margin-bottom: 4px; }
+    @media print {
+      body { padding: 0; overflow: visible; }
+      .contract-page { max-height: none; overflow: visible; }
+      .two-cols, .footer-rules, .final-block { page-break-inside: avoid; }
+      html, body { height: 297mm; max-height: 297mm; }
+    }
+  </style>
+</head>
+<body>
+  <div class="contract-page">
+
+  <div class="header">
+    <div class="header-left">
+      <div class="company-name">{{company_name}}</div>
+      <div class="contact">
+        {{company_phone}}<br>
+        {{company_address}}<br>
+        {{company_website}} {{company_email}}
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="doc-title">RENTAL AGREEMENT / KİRA SÖZLEŞMESİ</div>
+      <div class="emergency-row">Police: 155 <span>_______________</span> Jandarma: 156 <span>_______________</span></div>
+      <div class="accessories">
+        <label>☐ Çocuk Koltuğu</label><label>☐ Ruhsat</label><label>☐ Tente</label><label>☐ Miğfer/Helmet</label>
+      </div>
+      <div class="notice-box">NOTICE: Stadt Mitte 50 km. Außerhalb 90 km.</div>
+    </div>
+  </div>
+
+  <div class="two-cols">
+    <div class="col">
+      <div class="section-title">Müşteri / Sürücü – Renter & Driver</div>
+      <div class="field-row">
+        <div class="field-label">Home Adress / Haus Adresse / Ev Adresi:</div>
+        <div class="field-value">{{ev_adresi}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Tel:</div>
+        <div class="field-value">{{tel}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">E-mail:</div>
+        <div class="field-value">{{email}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Hotel Name:</div>
+        <div class="field-value">{{hotel_name}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Room nr. / Zimmer nr.:</div>
+        <div class="field-value">{{room_nr}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Driver / Fahrer Name / Sürücü Adı:</div>
+        <div class="field-value">{{driver_name}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Place of Birth / Geburts Datum / Doğum Tarihi:</div>
+        <div class="field-value">{{date_of_birth}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Place of Birth / Doğum Yeri:</div>
+        <div class="field-value">{{place_of_birth}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Licence / Führerschein No. / Ehliyet No.:</div>
+        <div class="field-value">{{ehliyet_no}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Issued by & Date / Verildiği Yer-Tarih:</div>
+        <div class="field-value">{{verildigi_yer_tarih}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Passport No / Pasaport No:</div>
+        <div class="field-value">{{passport_no}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Issued by & Date (Passport):</div>
+        <div class="field-value">{{passport_issued}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Second driver / İkinci şoför:</div>
+        <div class="field-value">{{second_driver}}</div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="section-title">Araç & Kiralama – Vehicle & Rental</div>
+      <div class="field-row">
+        <div class="field-label">Car will be Returned / Döneceği İstasyon:</div>
+        <div class="field-value">{{return_station}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Rezervation Veren:</div>
+        <div class="field-value">{{reservation_provider}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Araç Markası / Vehicle Mod. / Fahrzeug Mod.:</div>
+        <div class="field-value">{{vehicleName}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Araç Değiş.:</div>
+        <div class="field-value">{{vehicle_change}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Car Code / Araç Kodu:</div>
+        <div class="field-value">{{car_code}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">FROM Date and Time / Tarih ve Saat:</div>
+        <div class="field-value">{{date_in}} {{time}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Date and Time / Tarih ve Saat (TO):</div>
+        <div class="field-value">{{date_out}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Km out / Çıkış Km.:</div>
+        <div class="field-value"><span class="km-boxes">____ ____ ____ ____ ____ ____</span></div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Km in / Dönüş Km.:</div>
+        <div class="field-value"><span class="km-boxes">____ ____ ____ ____ ____ ____</span></div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Km Driven / Yap. Km.:</div>
+        <div class="field-value"><span class="km-boxes">____ ____ ____ ____ ____ ____</span></div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Gasoline / Benzin:</div>
+        <div class="fuel-gauge"><span class="scale">0 1 2 3 4 5 6 7 8</span><br>In: ☐ &nbsp; Out: ☐</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Rental Amount / Kira Bedeli:</div>
+        <div class="field-value">{{gross_total}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="two-cols">
+    <div class="col">
+      <div class="section-title">CAR INSURANCE / KASKO SİGORTASI</div>
+      <div class="checkbox-inline">YES / EVET ☐</div><div class="checkbox-inline">NO / HAYIR ☐</div>
+      <div class="section-title" style="margin-top:6px">CDW INSURANCE / REIFEN, SCHEIBEN, CAM FAR SİGORTASI</div>
+      <div class="insurance-note">
+        IF YOU PAY EURO 10 (PER DAY) IT COVERS EVERYTHING. REIFEN, SCHEIBEN, LICHT NICHT IN VERSICHERUNG. GEGEN AUFSCHLAG 10 EUR/TAG ABDECKBAR.
+      </div>
+      <div class="checkbox-inline">YES / EVET ☐</div><div class="checkbox-inline">NO / HAYIR ☐</div>
+      <div class="section-title" style="margin-top:6px">DAYS / Tage</div>
+      <table class="summary-table">
+        <tr><td>DAYS / Tage:</td><td style="text-align:right">{{duration}} =</td></tr>
+        <tr><td>Insurance:</td><td style="text-align:right">_______________ =</td></tr>
+        <tr><td>CDW Insurance:</td><td style="text-align:right">_______________ =</td></tr>
+        <tr><td>Extra:</td><td style="text-align:right">_______________ =</td></tr>
+        <tr class="total-row"><td>TOTAL:</td><td style="text-align:right; border-bottom:2px solid #1a237e">{{gross_total}} =</td></tr>
+      </table>
+      <div class="field-row" style="margin-top:4px">
+        <div class="field-label">Final Account / Net Toplam:</div>
+        <div class="field-value">{{gross_total}}</div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="section-title">Kredi Kartı Bilgileri / Credit Cards</div>
+      <div class="field-row">
+        <div class="field-label">Kredi Kartı Sahibi / Credit Card Owner:</div>
+        <div class="field-value">{{credit_card_owner}}</div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Kredi Kartı Numarası / Credit Card Number:</div>
+        <div class="field-value"><span class="card-boxes">____</span> <span class="card-boxes">____</span> <span class="card-boxes">____</span> <span class="card-boxes">____</span></div>
+      </div>
+      <div class="field-row">
+        <div class="field-label">Son Kullanma Tarihi / Month Year / Ccv Numara:</div>
+        <div class="field-value">{{card_expiry_ccv}}</div>
+      </div>
+      <div class="signature-line"></div>
+      <div class="signature-label">Kart Sahibi İmzası / Credit Card Owner Signature</div>
+
+      <div class="section-title" style="margin-top:6px">Araç Hasar Diyagramı</div>
+      <div class="damage-diagram">
+        <svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+          <rect x="30" y="10" width="60" height="40" rx="4" fill="none" stroke="#1a237e" stroke-width="1"/>
+          <rect x="40" y="18" width="20" height="12" fill="none" stroke="#1a237e" stroke-width="0.8"/>
+          <rect x="60" y="18" width="20" height="12" fill="none" stroke="#1a237e" stroke-width="0.8"/>
+          <text x="50" y="8" class="damage-num" text-anchor="middle">1</text>
+          <text x="70" y="8" class="damage-num" text-anchor="middle">2</text>
+          <text x="90" y="25" class="damage-num" text-anchor="middle">3</text>
+          <text x="90" y="42" class="damage-num" text-anchor="middle">4</text>
+          <text x="70" y="55" class="damage-num" text-anchor="middle">5</text>
+          <text x="50" y="55" class="damage-num" text-anchor="middle">6</text>
+          <text x="30" y="42" class="damage-num" text-anchor="middle">7</text>
+          <text x="30" y="25" class="damage-num" text-anchor="middle">8</text>
+          <text x="60" y="35" class="damage-num" text-anchor="middle">9</text>
+          <text x="95" y="35" class="damage-num" text-anchor="middle">11</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-rules">
+    <div class="col-titles">TRAFİK CEZALARI / TRAFFIC FINES / VERKEHRSSTRAFEN</div>
+    <p>Trafik Cezaları müşteriye aittir. Araçların trafikçe alıkonulması durumunda bu süre kiralama süresine dahil edilir. Traffic fines belong to the customer.</p>
+    <p>FULL KASKO BİS / SELBST BETEILIGUNG: _______________ &nbsp; FULL KASKO TILL / TEİL KASKO: _______________</p>
+  </div>
+
+  <div class="final-block">
+    <p>RENTAL AGREEMENT'S detail's, in front and on behind sides of copy haves been readed by me and I completely accept the standard terms of rental.</p>
+    <div class="field-row"><div class="field-label">TUTAR / TOTAL / LE MONTANT:</div><div class="field-value">{{gross_total}}</div></div>
+    <div class="field-row"><div class="field-label">Yazı ile / By writing / Schriftlich:</div><div class="field-value">{{amount_in_words}}</div></div>
+    <div class="field-row"><div class="field-label">Ödedim / Paid / Bezahlt:</div><div class="field-value">{{paid}}</div></div>
+    <div class="field-row"><div class="field-label">Name / Adı:</div><div class="field-value">{{driver_name}}</div></div>
+    <div class="signature-line"></div>
+    <div class="signature-label">Signature / İmza</div>
+  </div>
+
+  </div>
+</body>
+</html>

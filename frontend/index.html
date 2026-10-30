@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag (gtag.js) + Consent Mode v2 -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      var euConsent = {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        functionality_storage: 'denied',
+        personalization_storage: 'denied',
+        security_storage: 'granted',
+        wait_for_update: 500
+      };
+      var grantedConsent = {
+        ad_storage: 'granted',
+        analytics_storage: 'granted',
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+        functionality_storage: 'granted',
+        personalization_storage: 'granted',
+        security_storage: 'granted'
+      };
+      gtag('consent', 'default', Object.assign({}, euConsent, {
+        region: ['AT','BE','BG','CH','CY','CZ','DE','DK','EE','ES','FI','FR','GB','GR','HR','HU','IE','IS','IT','LI','LT','LU','LV','MT','NL','NO','PL','PT','RO','SE','SI','SK']
+      }));
+      gtag('consent', 'default', grantedConsent);
+
+      try {
+        var saved = JSON.parse(localStorage.getItem('cookieSettings') || 'null');
+        if (saved) {
+          var ads = saved.marketing ? 'granted' : 'denied';
+          var analytics = saved.performance ? 'granted' : 'denied';
+          var functionality = saved.functionality ? 'granted' : 'denied';
+          gtag('consent', 'update', {
+            ad_storage: ads,
+            ad_user_data: ads,
+            ad_personalization: ads,
+            analytics_storage: analytics,
+            functionality_storage: functionality,
+            personalization_storage: functionality,
+            security_storage: 'granted'
+          });
+        }
+      } catch (e) {}
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18412983233"></script>
+    <script>
+      gtag('js', new Date());
+      gtag('config', 'AW-18412983233');
+    </script>
+    <!--seo-head-->
+    <title data-rh="true">Berg Rent a Car | Türkiye'nin En İyi Araç Kiralama Şirketi | ANTALYA | ALANYA</title>
+    <meta data-rh="true" name="description" content="Berg Rent a Car - Türkiye'nin en güvenilir araç kiralama şirketi. Antalya, Alanya ve Türkiye'nin her yerinde araç kiralama. En iyi fiyatlar, kaliteli hizmet, geniş araç filosu." />
+    <meta data-rh="true" name="author" content="Berg Rent A Car" />
+    <meta data-rh="true" name="robots" content="index, follow" />
+    <link data-rh="true" rel="canonical" href="https://bergrentacar.com/tr" />
+    <link data-rh="true" rel="alternate" hreflang="tr" href="https://bergrentacar.com/tr" />
+    <link data-rh="true" rel="alternate" hreflang="en" href="https://bergrentacar.com/en" />
+    <link data-rh="true" rel="alternate" hreflang="de" href="https://bergrentacar.com/de" />
+    <link data-rh="true" rel="alternate" hreflang="ru" href="https://bergrentacar.com/ru" />
+    <link data-rh="true" rel="alternate" hreflang="x-default" href="https://bergrentacar.com/tr" />
+    <meta data-rh="true" property="og:type" content="website" />
+    <meta data-rh="true" property="og:url" content="https://bergrentacar.com/tr" />
+    <meta data-rh="true" property="og:title" content="Berg Rent a Car | Türkiye'nin En İyi Araç Kiralama Şirketi | ANTALYA | ALANYA" />
+    <meta data-rh="true" property="og:description" content="Berg Rent a Car - Türkiye'nin en güvenilir araç kiralama şirketi. Antalya, Alanya ve Türkiye'nin her yerinde araç kiralama." />
+    <meta data-rh="true" property="og:image" content="https://bergrentacar.com/images/bergrentacarlogo.png" />
+    <meta data-rh="true" property="og:image:width" content="1200" />
+    <meta data-rh="true" property="og:image:height" content="630" />
+    <meta data-rh="true" property="og:site_name" content="Berg Rent A Car" />
+    <meta data-rh="true" property="og:locale" content="tr_TR" />
+    <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+    <meta data-rh="true" name="twitter:title" content="Berg Rent a Car | Türkiye'nin En İyi Araç Kiralama Şirketi | ANTALYA | ALANYA" />
+    <meta data-rh="true" name="twitter:description" content="Berg Rent a Car - Türkiye'nin en güvenilir araç kiralama şirketi. Antalya, Alanya ve Türkiye'nin her yerinde araç kiralama." />
+    <meta data-rh="true" name="twitter:image" content="https://bergrentacar.com/images/bergrentacarlogo.png" />
+    <script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":["LocalBusiness","AutoRental"],"@id":"https://bergrentacar.com/#business","name":"Berg Rent A Car","alternateName":"Berg Rent a Car Alanya","url":"https://bergrentacar.com","logo":"https://bergrentacar.com/images/bergrentacarlogo.png","image":"https://bergrentacar.com/images/bergrentacarlogo.png","description":"Antalya ve Alanya başta olmak üzere Türkiye genelinde havalimanı araç kiralama, günlük ve uzun dönem rent a car hizmetleri.","telephone":"+905325618681","email":"info@bergrentacar.com","priceRange":"₺₺","address":{"@type":"PostalAddress","streetAddress":"Alanya","addressLocality":"Alanya","addressRegion":"Antalya","addressCountry":"TR"},"geo":{"@type":"GeoCoordinates","latitude":"36.5444","longitude":"31.9954"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"},"sameAs":["https://www.instagram.com/bergrentacar","https://www.facebook.com/bergrentacar"],"areaServed":{"@type":"Country","name":"Turkey"}}</script>
+    <!--/seo-head-->
+  </head>
+  <body>
+    <div id="root"><!--seo-body--><main><h1>Araç kiralama fiyat karşılaştırması</h1><p>Berg Rent a Car - Türkiye'nin en güvenilir araç kiralama şirketi. Antalya, Alanya ve Türkiye'nin her yerinde araç kiralama.</p></main><!--/seo-body--></div>
+    <script>
+      (function () {
+        var host = location.hostname.toLowerCase();
+        var localHost = host === 'localhost' || host === '127.0.0.1' || host === '::1' || host === '[::1]';
+        if (host === 'bergrentacar.com' || host === 'www.bergrentacar.com') return;
+        if (localHost && location.port === '8080') return;
+        document.documentElement.replaceChildren();
+        var body = document.createElement('body');
+        var paragraph = document.createElement('p');
+        paragraph.textContent = 'Bu site yalnızca bergrentacar.com veya http://localhost:8080 üzerinde açılır.';
+        body.appendChild(paragraph);
+        document.documentElement.appendChild(body);
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "siteUrl": "https://bergrentacar.com",
+  "name": "Berg Rent A Car",
+  "alternateName": "Berg Rent a Car Alanya",
+  "locales": ["tr", "en", "de", "ru"],
+  "defaultLocale": "tr",
+  "telephone": "+905325618681",
+  "telephoneDisplay": "+90 532 561 86 81",
+  "email": "info@bergrentacar.com",
+  "priceRange": "₺₺",
+  "logo": "https://bergrentacar.com/images/bergrentacarlogo.png",
+  "image": "https://bergrentacar.com/images/bergrentacarlogo.png",
+  "address": {
+    "streetAddress": "Alanya",
+    "addressLocality": "Alanya",
+    "addressRegion": "Antalya",
+    "postalCode": "",
+    "addressCountry": "TR"
+  },
+  "geo": {
+    "latitude": "36.5444",
+    "longitude": "31.9954"
+  },
+  "sameAs": [
+    "https://www.instagram.com/bergrentacar",
+    "https://www.facebook.com/bergrentacar"
+  ],
+  "areaServed": "TR"
+}

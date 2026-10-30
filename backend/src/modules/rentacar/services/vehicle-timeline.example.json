@@ -1,0 +1,138 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": "rental-start-abc123",
+      "type": "rental_start",
+      "title": "Kiralama Başladı - Ahmet Yılmaz",
+      "description": "Rezervasyon: RAC-2024-001\nMüşteri: Ahmet Yılmaz\nAlış Lokasyonu: İstanbul Havalimanı",
+      "date": "2024-01-15T10:00:00.000Z",
+      "metadata": {
+        "reservationId": "abc123",
+        "reference": "RAC-2024-001",
+        "customerName": "Ahmet Yılmaz",
+        "customerEmail": "ahmet@example.com",
+        "pickupLocation": "İstanbul Havalimanı"
+      }
+    },
+    {
+      "id": "checkout-abc123",
+      "type": "checkout",
+      "title": "Araç Teslim Edildi - Ahmet Yılmaz",
+      "description": "Araç müşteriye teslim edildi.\nRezervasyon: RAC-2024-001",
+      "date": "2024-01-15T10:00:00.000Z",
+      "metadata": {
+        "reservationId": "abc123",
+        "reference": "RAC-2024-001",
+        "customerName": "Ahmet Yılmaz"
+      }
+    },
+    {
+      "id": "damage-xyz789",
+      "type": "damage",
+      "title": "Ön Tampon Çizik",
+      "description": "Araç dönüşünde ön tamponda çizik tespit edildi.",
+      "date": "2024-01-20T14:30:00.000Z",
+      "media": [
+        {
+          "id": "media-001",
+          "type": "image",
+          "url": "/uploads/damages/xyz789/front-bumper-scratch.jpg",
+          "filename": "front-bumper-scratch.jpg",
+          "description": "Ön tampon çizik detayı"
+        }
+      ],
+      "metadata": {
+        "damageId": "xyz789",
+        "severity": "minor",
+        "status": "reported",
+        "repairCost": 500.00,
+        "currencyCode": "EUR",
+        "reportedBy": "Mehmet Demir",
+        "reservationId": "abc123"
+      }
+    },
+    {
+      "id": "maintenance-456",
+      "type": "maintenance",
+      "title": "Yağ Değişimi",
+      "description": "Araç için periyodik yağ değişimi yapıldı.",
+      "date": "2024-01-22T09:00:00.000Z",
+      "media": [
+        {
+          "id": "media-002",
+          "type": "document",
+          "url": "/uploads/maintenance/456/oil-change-receipt.pdf",
+          "filename": "oil-change-receipt.pdf",
+          "description": "Servis fişi"
+        }
+      ],
+      "metadata": {
+        "maintenanceId": "456",
+        "type": "oil_change",
+        "status": "completed",
+        "cost": 150.00,
+        "currencyCode": "EUR",
+        "serviceProvider": "ABC Oto Servis",
+        "odometerReading": 45000,
+        "performedBy": "Ali Veli"
+      }
+    },
+    {
+      "id": "penalty-789",
+      "type": "penalty",
+      "title": "HGS Geçiş Ücreti",
+      "description": "İstanbul-Ankara otoyolu HGS geçiş ücreti",
+      "date": "2024-01-18T12:00:00.000Z",
+      "metadata": {
+        "penaltyId": "789",
+        "type": "hgs",
+        "status": "paid",
+        "amount": 45.50,
+        "currencyCode": "EUR",
+        "location": "İstanbul-Ankara Otoyolu",
+        "reservationId": "abc123"
+      }
+    },
+    {
+      "id": "checkin-abc123",
+      "type": "checkin",
+      "title": "Araç Geri Alındı - Ahmet Yılmaz",
+      "description": "Araç müşteriden geri alındı.\nRezervasyon: RAC-2024-001",
+      "date": "2024-01-25T16:00:00.000Z",
+      "metadata": {
+        "reservationId": "abc123",
+        "reference": "RAC-2024-001",
+        "customerName": "Ahmet Yılmaz"
+      }
+    },
+    {
+      "id": "rental-end-abc123",
+      "type": "rental_end",
+      "title": "Kiralama Bitti - Ahmet Yılmaz",
+      "description": "Rezervasyon: RAC-2024-001\nMüşteri: Ahmet Yılmaz\nDönüş Lokasyonu: İstanbul Havalimanı",
+      "date": "2024-01-25T16:00:00.000Z",
+      "metadata": {
+        "reservationId": "abc123",
+        "reference": "RAC-2024-001",
+        "customerName": "Ahmet Yılmaz",
+        "dropoffLocation": "İstanbul Havalimanı"
+      }
+    },
+    {
+      "id": "revenue-abc123",
+      "type": "revenue",
+      "title": "Gelir - 850.00 EUR",
+      "description": "Rezervasyon: RAC-2024-001\nMüşteri: Ahmet Yılmaz\nToplam: 850.00 EUR",
+      "date": "2024-01-25T16:00:00.000Z",
+      "metadata": {
+        "reservationId": "abc123",
+        "reference": "RAC-2024-001",
+        "amount": 850.00,
+        "currencyCode": "EUR",
+        "customerName": "Ahmet Yılmaz"
+      }
+    }
+  ]
+}
+

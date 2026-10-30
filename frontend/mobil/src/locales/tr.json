@@ -1,0 +1,928 @@
+{
+  "header": {
+    "askExperts": "Kiralama uzmanlarımıza sorun:",
+    "phone": "+49 89 1436 7940",
+    "hours": "Bugün 12:00 - 18:30 saatleri arası",
+    "carCategories": "Araç Kategorileri",
+    "support": "Destek",
+    "topDestinations": "Popüler Rotalar",
+    "aboutUs": "Hakkımızda",
+    "helpCenter": "Yardım Merkezi",
+    "contactUs": "İletişim",
+    "faq": "SSS",
+    "liveChat": "Canlı Destek",
+    "companyInfo": "Şirket Bilgileri",
+    "ourStory": "Hikayemiz",
+    "careers": "Kariyer",
+    "press": "Basın"
+  },
+  "hero": {
+    "title": "Araç kiralama fiyat karşılaştırması",
+    "subtitle": "Size gerçekten yardımcı olan fiyat karşılaştırması!"
+  },
+  "searchForm": {
+    "rentalCarSearch": "Araç kiralama araması",
+    "transferSearch": "Transfer araması",
+    "chooseRentalStation": "Kiralama istasyonu seçin",
+    "dropOffStation": "Teslim istasyonu",
+    "returnAtSameStation": "Aynı kiralama istasyonunda teslim",
+    "chooseDropOffStation": "Teslim istasyonu seçin",
+    "pickup": "Alış",
+    "dropOff": "Teslim",
+    "pickADate": "Tarih seçin",
+    "time": "Saat",
+    "searchNow": "Şimdi ara",
+    "pickupLocation": "Alış konumu",
+    "dropOffLocation": "Teslim konumu",
+    "choosePickupLocation": "Alış konumu seçin",
+    "selectPickupLocationFirst": "Önce alış konumu seçin",
+    "chooseDropOffLocation": "Teslim konumu seçin",
+    "pickupDateAndTime": "Alış tarihi ve saati",
+    "numberOfPassengers": "Yolcu sayısı",
+    "selectPassengers": "Yolcu seçin",
+    "passenger": "yolcu",
+    "passengers": "yolcular",
+    "searchTransfer": "Transfer ara",
+    "loading": "Yükleniyor...",
+    "loadingLocations": "Konumlar yükleniyor...",
+    "noLocationsAvailable": "Konum bulunamadı",
+    "loadingDropoffLocations": "Teslim konumları yükleniyor...",
+    "returnAtDifferentLocation": "Farklı konumda teslim",
+    "noDropoffLocationsAvailable": "Teslim konumu bulunamadı",
+    "pickupDateAndTimeLabel": "Alış tarihi ve saati",
+    "dropOffDateAndTimeLabel": "Teslim tarihi ve saati",
+    "pickupDate": "Alış Tarihi",
+    "pickupTime": "Alış Saati",
+    "returnDate": "İade Tarihi",
+    "returnTime": "İade Saati",
+    "pickupDropoffLocation": "Alış / Dönüş Yeri",
+    "deliveryProcessVideo": "Teslimat Süreci Videosu",
+    "returnDateAndTime": "Dönüş Tarihi ve Saati",
+    "useDiscountCode": "İndirim Kodu Kullan"
+  },
+  "features": {
+    "title": "Özellikler",
+    "safeRental": {
+      "title": "Güvenli Kiralama",
+      "description": "Kapsamlı sigorta seçenekleri ile güvenle seyahat edin"
+    },
+    "service24": {
+      "title": "7/24 Hizmet",
+      "description": "İhtiyacınız olduğu her an yanınızdayız"
+    },
+    "wideNetwork": {
+      "title": "Geniş Lokasyon Ağı",
+      "description": "Türkiye'nin her yerinde araç teslim noktalarımız"
+    },
+    "flexiblePayment": {
+      "title": "Esnek Ödeme",
+      "description": "Kredi kartı, nakit ve taksit seçenekleri"
+    },
+    "customerSupport": {
+      "title": "Müşteri Desteği",
+      "description": "Profesyonel ekibimiz her zaman yardımcı olmaya hazır"
+    },
+    "qualityCars": {
+      "title": "Kaliteli Araçlar",
+      "description": "Düzenli bakımlı ve temiz araç filosu"
+    }
+  },
+  "destinations": {
+    "title": "Popüler Rotalar",
+    "viewAll": "Tüm Destinations",
+    "allDestinations": "Tüm Destinations",
+    "allDestinationsTitle": "Tüm Destinations | Berg Rent a Car",
+    "allDestinationsDescription": "Berg Rent a Car tüm destinations listesi. Türkiye'nin en popüler rotalarını keşfedin.",
+    "allDestinationsKeywords": "destinations, rotalar, araç kiralama, türkiye rotaları",
+    "retry": "Tekrar Dene",
+    "noMoreDestinations": "Tüm destinations gösterildi",
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "notFound": "Destination bulunamadı",
+    "backToDestinations": "Destinations'a Dön",
+    "about": "Hakkında",
+    "rentCarIn": "Araç Kirala",
+    "ctaDescription": "En iyi araç kiralama fırsatlarını keşfedin",
+    "carRental": "Araç Kiralama",
+    "carRentalPrices": "Araç Kiralama Fiyatları",
+    "priceInfo1": "Araç kiralama fiyatları, araç özellikleri, model, kiralama süresi ve ekstra özellikler gibi faktörlere göre değişiklik göstermektedir.",
+    "priceInfo2": "Günlük fiyatlar için web sitemizi ziyaret edebilir, uzun süreli kiralama fiyatları için müşteri temsilcilerimizle iletişime geçebilirsiniz.",
+    "priceInfo3": "Berg Rent a Car olarak, uygun fiyat ve güvenilir hizmet anlayışı ile müşterilerimize en iyi deneyimi sunmaktayız.",
+    "generalInfo": "Genel Bilgiler",
+    "generalInfoText": "Bu destination, Türkiye'nin önemli destinasyonlarından biridir. Modern altyapısı ve geniş hizmet ağı ile araç kiralama hizmetleri sunmaktadır.",
+    "where": "Nerede?",
+    "locationInfo": "Bu destination konumu hakkında detaylı bilgi için müşteri hizmetlerimizle iletişime geçebilirsiniz.",
+    "locationInfo2": "Havalimanı araç kiralama hizmetlerimiz sayesinde, varışınızda hemen araç teslim alabilir ve seyahatinize başlayabilirsiniz.",
+    "bestDeals": "En Uygun Araç Kiralama",
+    "bestDealsText": "Berg Rent a Car olarak, geniş araç filomuz ve uygun fiyatlarımız ile size en iyi araç kiralama deneyimini sunuyoruz.",
+    "bestDealsText2": "Benzinli, dizel, otomatik ve manuel vitesli araçlar dahil olmak üzere geniş bir araç yelpazesi arasından seçim yapabilirsiniz."
+  },
+  "blog": {
+    "title": "Yeni ne var?",
+    "subtitle": "Bergrentacar hakkındaki en son ve ilginç haberleri burada bulun!",
+    "readMore": "Devamını oku +",
+    "joinForFree": "Ücretsiz katıl",
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "notFound": "Blog yazısı bulunamadı",
+    "backToHome": "Ana Sayfaya Dön",
+    "published": "Yayın Tarihi",
+    "views": "Görüntülenme"
+  },
+  "companyInfo": {
+    "accordionTitle": "Şirket Bilgileri",
+    "title": "BERG Rent A Car Hakkında",
+    "subtitle": "Antalya & Alanya Araç Kiralama | Berg Rent A Car",
+    "seoDescription": "BERG Rent A Car hakkında bilgiler. Şirketimizin misyonu, vizyonu ve değerleri.",
+    "seoKeywords": "şirket bilgileri, hakkımızda, BERG Rent A Car, misyon, vizyon",
+    "intro": "Antalya araç kiralama, Alanya rent a car ve havalimanı araç kiralama hizmetlerinde güvenilir bir firma arıyorsanız, Berg Rent A Car sizin için doğru adres. Kurumsal hizmet anlayışı, geniş araç filosu ve şeffaf fiyat politikasıyla araç kiralama sürecini hızlı, güvenli ve konforlu hale getiriyoruz.",
+    "introduction": "BERG Rent A Car, araç kiralama sektöründe uzun yıllara dayanan tecrübesiyle, güçlü operasyonel yapısı ve kurumsal yaklaşımıyla hizmet veren bir markadır. Ali Dağ tarafından kurulan firmamız, sektörde sürdürülebilir bir yapı kurma hedefiyle yola çıkmış; zaman içinde hizmet kalitesini, araç filosunu ve organizasyon gücünü istikrarlı biçimde geliştirmiştir.",
+    "approach": "BERG Rent A Car, bireysel ve kurumsal müşterilerine yönelik çözümlerini; planlı operasyon, düzenli araç yönetimi ve profesyonel hizmet anlayışı üzerine inşa eder. Amacımız, araç kiralama sürecini karmaşadan uzak, net ve verimli bir hizmet modeline dönüştürmektir.",
+    "whyTitle": "Neden Berg Rent A Car?",
+    "whyContent": "Berg Rent A Car, aracısız ve komisyonsuz araç kiralama modeliyle müşterilerine net ve güvenilir çözümler sunar. Gizli ücretler olmadan, tüm fiyatları önceden görebileceğiniz şeffaf rezervasyon sistemi sayesinde sürprizlerle karşılaşmazsınız. Günlük, aylık ve uzun dönem araç kiralama seçenekleriyle bireysel ve kurumsal müşterilere özel çözümler üretir.",
+    "serviceTitle": "Antalya & Alanya'da Araç Kiralama Hizmeti",
+    "serviceContent1": "Ana merkezi Antalya – Alanya olan firmamız, Türkiye genelinde rent a car hizmeti sunmaktadır. Başta Antalya Havalimanı araç kiralama ve Alanya Gazipaşa Havalimanı araç kiralama olmak üzere, birçok noktada aracınızı hızlı ve kolay şekilde teslim alabilirsiniz. Havalimanında araç kiralama sayesinde zaman kaybetmeden seyahatinize başlayabilir, tatilinizin keyfini çıkarabilirsiniz.",
+    "serviceContent2": "Antalya, İstanbul, Ankara, İzmir, Bodrum, Dalaman, Konya, Kemer, Side ve Belek gibi şehir ve turistik bölgelerde uygun fiyatlı araç kiralama seçeneklerimizle hizmet veriyoruz.",
+    "fleetTitle": "Geniş Araç Filosu & Uygun Fiyatlar",
+    "fleetContent1": "Berg Rent A Car filosunda:",
+    "fleetItem1": "Ekonomik araçlar",
+    "fleetItem2": "Aile tipi araçlar",
+    "fleetItem3": "SUV ve konfor sınıfı araçlar",
+    "fleetContent2": "bulunmaktadır. Tüm araçlarımız düzenli bakımları yapılmış, güvenli ve konforlu modellerden oluşur. Ucuz araç kiralama Antalya ve Alanya rent a car fiyatları arayanlar için bütçe dostu çözümler sunuyoruz.",
+    "onlineTitle": "Online Rezervasyon ile Hızlı Araç Kiralama",
+    "onlineContent1": "Gelişmiş online rezervasyon sistemimiz sayesinde:",
+    "onlineItem1": "Konum ve lokasyon seçimi",
+    "onlineItem2": "Tarih ve saat ayarlaması",
+    "onlineItem3": "Araç kategorisi seçimi",
+    "onlineItem4": "Net fiyat görüntüleme",
+    "onlineContent2": "işlemlerini saniyeler içinde tamamlayabilirsiniz. Online araç kiralama ile zaman kaybetmeden, güvenli şekilde rezervasyon yapabilirsiniz.",
+    "supportTitle": "7/24 Destek & Çok Dilli Hizmet",
+    "supportContent": "Türkçe, İngilizce ve Almanca destek sunan müşteri hizmetlerimizle, araç kiralama süreciniz boyunca 7/24 yanınızdayız. Yerli ve yabancı misafirlerimize sorunsuz iletişim ve hızlı çözüm garantisi sağlıyoruz.",
+    "rentalPeriodsTitle": "Günlük, Aylık ve Uzun Dönem Araç Kiralama",
+    "rentalPeriodsContent1": "Berg Rent A Car olarak:",
+    "rentalPeriodsItem1": "Günlük araç kiralama",
+    "rentalPeriodsItem2": "Aylık rent a car",
+    "rentalPeriodsItem3": "Uzun dönem araç kiralama",
+    "rentalPeriodsContent2": "hizmetlerini esnek sözleşme ve avantajlı fiyatlarla sunuyoruz. İş seyahatleri, tatil planları ve kurumsal ihtiyaçlar için ideal çözümler üretiyoruz.",
+    "safetyTitle": "Berg Rent A Car ile Güvenli Yolculuk",
+    "safetyContent": "Müşteri memnuniyetini ön planda tutan hizmet anlayışımızla, Antalya araç kiralama firmaları arasında güvenilir ve tercih edilen bir marka olmayı sürdürüyoruz. Kaliteli hizmet, güçlü operasyon altyapısı ve deneyimli ekibimizle her yolculuğunuzu keyifli hale getiriyoruz.",
+    "cta": "🚗 Antalya & Alanya'da araç kiralama ihtiyaçlarınız için hemen Berg Rent A Car ile iletişime geçin, konforlu ve güvenli yolculuğun tadını çıkarın.",
+    "mission": {
+      "title": "Misyonumuz",
+      "description1": "Araç kiralama hizmetini; planlama, süreklilik ve kurumsal disiplin çerçevesinde sunarak, müşterilerimize sorunsuz ve yüksek standartlarda bir deneyim sağlamak.",
+      "description2": "Hizmet süreçlerimizi sürekli geliştirerek, sektörün ihtiyaçlarına uyum sağlayan, güçlü ve istikrarlı bir yapı oluşturmak."
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "description1": "BERG Rent A Car'ın vizyonu; araç kiralama sektöründe ölçeklenebilir yapısı, kurumsal kimliği ve stratejik bakış açısıyla kalıcı ve saygın bir marka haline gelmektir.",
+      "description2": "Kısa vadeli hedefler yerine uzun vadeli değer üretmeyi benimseyen firmamız; yerelden güç alarak ulusal ölçekte bilinirliği artan, sektörde referans gösterilen bir konuma ulaşmayı amaçlar.",
+      "description3": "BERG Rent A Car, değişen mobilite ihtiyaçlarını doğru analiz eden ve geleceğe yönelik sağlam adımlar atan bir marka olma vizyonuyla hareket eder."
+    }
+  },
+  "reviews": {
+    "satisfaction": "MietwagenCheck ile Memnuniyet",
+    "reviews": "İnceleme",
+    "experiences": "Müşterilerimizin Malaga'daki deneyimleri"
+  },
+  "cta": {
+    "title": "Hemen Rezervasyon Yapın",
+    "subtitle": "Size özel fırsatları kaçırmayın. Şimdi rezervasyon yapın, avantajlı fiyatlardan yararlanın.",
+    "description": "Size özel fırsatları kaçırmayın. Şimdi rezervasyon yapın, avantajlı fiyatlardan yararlanın.",
+    "button": "Rezervasyon Yap"
+  },
+  "login": {
+    "title": "Giriş Yap",
+    "email": "E-posta",
+    "password": "Şifre",
+    "submit": "Giriş Yap",
+    "submitting": "Giriş yapılıyor...",
+    "success": "Başarılı",
+    "successMessage": "Giriş yapıldı",
+    "error": "Hata",
+    "errorMessage": "Giriş bilgileri hatalı",
+    "errorGeneric": "Bir hata oluştu"
+  },
+  "errors": {
+    "missingFields": "Eksik Bilgiler",
+    "missingFieldsDescription": "Lütfen tüm gerekli alanları doldurun (alış konumu, alış tarihi ve teslim tarihi).",
+    "missingDropOffLocation": "Eksik Teslim Konumu",
+    "missingDropOffLocationDescription": "Lütfen bir teslim konumu seçin veya aynı kiralama istasyonunda teslim etmeyi seçin.",
+    "invalidDate": "Geçersiz Tarih",
+    "invalidDateDescription": "Teslim tarihi alış tarihinden önce olamaz.",
+    "invalidDatePast": "Geçmiş tarih seçilemez.",
+    "selectionRequired": "Seçim Gerekli",
+    "selectionRequiredDescription": "Lütfen önce bir alış konumu seçin.",
+    "failedToLoadLocations": "Konumlar yüklenemedi. Lütfen tekrar deneyin."
+  },
+  "success": {
+    "searchInitiated": "Arama Başlatıldı",
+    "searchInitiatedDescription": "Müsait araçlar aranıyor...",
+    "transferSearchInitiated": "Transfer Araması Başlatıldı",
+    "transferSearchInitiatedDescription": "Müsait transferler aranıyor..."
+  },
+  "footer": {
+    "companyName": "RentACar",
+    "companyDescription": "Türkiye'nin en güvenilir araç kiralama şirketi. Geniş araç filomuz ve kaliteli hizmetimizle yanınızdayız.",
+    "quickLinks": "Hızlı Linkler",
+    "home": "Ana Sayfa",
+    "carCategories": "Araç Kategorileri",
+    "locations": "Lokasyonlar",
+    "aboutUs": "Hakkımızda",
+    "faq": "SSS",
+    "services": "Hizmetlerimiz",
+    "dailyRental": "Günlük Araç Kiralama",
+    "monthlyRental": "Aylık Araç Kiralama",
+    "airportTransfer": "Havalimanı Transfer",
+    "chauffeurService": "Şoförlü Araç Hizmeti",
+    "corporateSolutions": "Kurumsal Çözümler",
+    "legalPolicies": "Yasal & Politikalar",
+    "contact": "İletişim",
+    "phone": "+90 (212) 555-0123",
+    "email": "info@rentacar.com",
+    "address": "Atatürk Cad. No: 123<br />34000 Beyoğlu/İstanbul",
+    "copyright": "© 2024 RentACar. Tüm hakları saklıdır."
+  },
+  "bottomNav": {
+    "home": "Ana Sayfa",
+    "reservations": "Rezervasyonlar",
+    "login": "Üyelik"
+  },
+  "helpCenter": {
+    "subtitle": "Sorularınızın cevaplarını bulun ve size yardımcı olalım",
+    "seoDescription": "Berg Rent a Car yardım merkezi. Rezervasyon, ödeme ve diğer konularda sık sorulan sorular ve destek.",
+    "seoKeywords": "yardım merkezi, destek, sık sorulan sorular, araç kiralama yardım",
+    "booking": {
+      "title": "Rezervasyon",
+      "description": "Rezervasyon yapma, değiştirme ve iptal etme konularında yardım"
+    },
+    "policies": {
+      "title": "Politikalar",
+      "description": "Ödeme, iptal ve diğer politika bilgileri"
+    },
+    "general": {
+      "title": "Genel Sorular",
+      "description": "Araç kiralama hakkında genel bilgiler"
+    },
+    "contact": {
+      "title": "İletişim",
+      "description": "Bizimle iletişime geçin, sorularınızı cevaplayalım"
+    },
+    "learnMore": "Daha Fazla Bilgi",
+    "liveChatDescription": "Canlı destek ile anında yardım alın",
+    "startChat": "Sohbet Başlat",
+    "contactDescription": "E-posta veya telefon ile bizimle iletişime geçin",
+    "contactUs": "İletişime Geç"
+  },
+  "contactUs": {
+    "subtitle": "Sorularınız mı var? Bizimle iletişime geçin, size yardımcı olalım",
+    "seoDescription": "Berg Rent a Car iletişim sayfası. Telefon, e-posta ve adres bilgileri.",
+    "seoKeywords": "iletişim, telefon, e-posta, adres, Berg Rent a Car",
+    "contactInfo": "İletişim Bilgileri",
+    "contactInfoDescription": "Aşağıdaki yöntemlerle bizimle iletişime geçebilirsiniz",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "address": "Adres",
+    "businessHours": "Çalışma Saatleri",
+    "businessHoursDetail": "Pazartesi - Cumartesi: 09:00 - 18:00",
+    "liveChatDescription": "Canlı destek ile anında yardım alın",
+    "startChat": "Sohbet Başlat",
+    "sendMessage": "Mesaj Gönder",
+    "sendMessageDescription": "Aşağıdaki formu doldurarak bize ulaşabilirsiniz",
+    "name": "Ad Soyad",
+    "subject": "Konu",
+    "message": "Mesajınız",
+    "send": "Gönder",
+    "sending": "Gönderiliyor...",
+    "successMessage": "Mesajınız başarıyla gönderildi!",
+    "error": "Hata",
+    "errorMessage": "Mesaj gönderilemedi. Lütfen tekrar deneyin."
+  },
+  "faq": {
+    "subtitle": "Sık sorulan sorular ve cevapları",
+    "seoDescription": "Berg Rent a Car sık sorulan sorular. Araç kiralama hakkında merak ettiğiniz her şey.",
+    "seoKeywords": "sık sorulan sorular, SSS, FAQ, araç kiralama soruları",
+    "needMoreHelp": "Daha fazla yardıma mı ihtiyacınız var?",
+    "items": [
+      {
+        "question": "Rezervasyonumu nasıl yapabilirim?",
+        "answer": "Web sitemiz üzerinden kolayca rezervasyon yapabilirsiniz. Ana sayfadaki arama formunu doldurarak başlayın. Alış ve teslim tarihlerini, lokasyonları seçin ve uygun aracı bulun. Rezervasyon işlemini tamamlamak için ödeme bilgilerinizi girin."
+      },
+      {
+        "question": "Rezervasyonumu iptal edebilir miyim?",
+        "answer": "Evet, rezervasyonlarınızı iptal edebilirsiniz. İptal koşulları rezervasyon tipine göre değişiklik gösterebilir. Detaylı bilgi için rezervasyonunuzun detay sayfasına bakabilir veya müşteri hizmetlerimizle iletişime geçebilirsiniz."
+      },
+      {
+        "question": "Hangi ödeme yöntemlerini kabul ediyorsunuz?",
+        "answer": "Kredi kartı, banka kartı ve nakit ödeme seçeneklerini kabul ediyoruz. Ayrıca taksitli ödeme seçenekleri de mevcuttur. Ödeme yöntemleri rezervasyon sırasında görüntülenecektir."
+      },
+      {
+        "question": "Ehliyet gereksinimleri nelerdir?",
+        "answer": "Araç kiralama için geçerli bir sürücü belgesine ihtiyacınız vardır. Uluslararası sürücü belgesi de kabul edilir. Minimum yaş gereksinimi genellikle 21 yaş olup, bazı araç kategorileri için daha yüksek yaş sınırı uygulanabilir."
+      },
+      {
+        "question": "Araçlarda sigorta var mı?",
+        "answer": "Evet, tüm araçlarımız temel sigorta kapsamındadır. Ek sigorta seçenekleri de mevcuttur. Detaylı bilgi için rezervasyon sırasında sigorta seçeneklerini inceleyebilir veya müşteri hizmetlerimizle iletişime geçebilirsiniz."
+      },
+      {
+        "question": "Araç teslim ve iade işlemleri nasıl yapılıyor?",
+        "answer": "Araç teslimi ve iadesi seçtiğiniz lokasyonda yapılır. Araç teslimi sırasında araç durumu kontrol edilir ve gerekli belgeler imzalanır. Araç iadesinde de benzer şekilde kontrol yapılır. Her iki işlem de hızlı ve kolay bir şekilde tamamlanır."
+      }
+    ]
+  },
+  "liveChat": {
+    "subtitle": "Canlı destek ile anında yardım alın",
+    "seoDescription": "Berg Rent a Car canlı destek. Sorularınız için anında yanıt alın.",
+    "seoKeywords": "canlı destek, chat, anında yardım",
+    "chatWithUs": "Bizimle Sohbet Edin",
+    "chatDescription": "Aşağıdaki alana mesajınızı yazarak bizimle iletişime geçebilirsiniz",
+    "welcomeMessage": "Merhaba! Size nasıl yardımcı olabiliriz?",
+    "typeMessage": "Mesajınızı yazın...",
+    "callUs": "Bizi Arayın",
+    "callDescription": "Telefon ile bizimle iletişime geçin",
+    "viewContactInfo": "İletişim Bilgileri",
+    "emailUs": "E-posta Gönderin",
+    "emailDescription": "E-posta ile bizimle iletişime geçin",
+    "sendEmail": "E-posta Gönder"
+  },
+  "vehicleSearch": {
+    "title": "Araç Arama Sonuçları",
+    "seoDescription": "Berg Rent a Car araç arama sonuçları. Uygun fiyatlı araç kiralama seçenekleri.",
+    "seoKeywords": "araç kiralama, araç arama, kiralık araçlar",
+    "pickupReturnInfo": "Alış ve İade Bilgileri",
+    "pickup": "Alış",
+    "return": "İade",
+    "editSearch": "Arama Bilgilerini Düzenle",
+    "pickupPoint": "Alış Noktası",
+    "dropoffPoint": "İade Noktası",
+    "pickupDate": "Alış Tarihi",
+    "pickupTime": "Alış Saati",
+    "dropoffDate": "İade Tarihi",
+    "dropoffTime": "İade Saati",
+    "discoverCars": "Araçları Keşfet",
+    "duration": "Süre",
+    "day": "Gün",
+    "promoCode": "Kampanya Kodu Gir",
+    "enterPromoCode": "Kampanya kodunu girin",
+    "filters": "Filtreler",
+    "segment": "Segment",
+    "vehicleType": "Araç Tipi",
+    "transmission": "Vites",
+    "fuelType": "Yakıt",
+    "sort": "Sırala",
+    "all": "Tümü",
+    "economy": "Ekonomi",
+    "comfort": "Konfor",
+    "luxury": "Lüks",
+    "sedan": "Sedan",
+    "suv": "SUV",
+    "hatchback": "Hatchback",
+    "manuel": "Manuel",
+    "otomatik": "Otomatik",
+    "benzin": "Benzin",
+    "dizel": "Dizel",
+    "elektrik": "Elektrik",
+    "sortPriceAsc": "Artan Fiyata Göre Sıralama",
+    "sortPriceDesc": "Azalan Fiyata Göre Sıralama",
+    "sortNameAsc": "İsme Göre Sıralama",
+    "loading": "Araçlar yükleniyor...",
+    "loadingLocation": "Konum yükleniyor...",
+    "noVehicles": "Arama kriterlerinize uygun araç bulunamadı",
+    "orSimilar": "Ya da benzeri",
+    "promotional": "Kampanyalı",
+    "noDeposit": "Depozitosuz",
+    "daily": "Günlük",
+    "total": "Toplam",
+    "selectVehicle": "Aracı Seç",
+    "mileageInfo": "{days} günlük rezervasyon, {km} KM yol hakkınız bulunmaktadır",
+    "viewDetails": "Detayı gör",
+    "vehicleDetails": "Araç Detayları",
+    "details": "Detaylar",
+    "brand": "Marka",
+    "model": "Model",
+    "group": "Grup",
+    "features": "Özellikler",
+    "capacity": "Kapasite",
+    "largeLuggage": "Büyük Bagaj",
+    "smallLuggage": "Küçük Bagaj",
+    "rentalConditions": "Kiralama Koşulları",
+    "deposit": "Depozito",
+    "depositDescription": "Araç tesliminde kredi kartınızdan bloke edilecek tutardır. Araç dönüş tarihinizi takip eden 14. iş gününe kadar blokeniz kaldırılır. Trafik cezası veya herhangi bir fatura edilmemiş tutar bulunmaması durumunda tamamen geri iade edilir.",
+    "creditCard": "Kredi Kartı",
+    "creditCardDescription": "Kendi adınıza kredi kartı gereklidir.",
+    "minimumDriverAge": "Minimum Sürücü Yaşı",
+    "minimumLicenseAge": "Minimum Ehliyet Yaşı",
+    "fairKmUsage": "Adil Km Kullanımı",
+    "fairKmUsageDescription": "Ücretsiz km kullanımı 10 güne kadar günlük 300 km'dir. Kilometre aşım ücreti €0,50 olarak hesaplanır.",
+    "years": "yıl",
+    "passengers": "Kişi Sayısı",
+    "luggage": "Bagaj",
+    "luggageUnit": "bagaj",
+    "doors": "Kapı",
+    "doorsUnit": "kapı",
+    "year": "Yıl",
+    "description": "Açıklama",
+    "payNow": "Şimdi Öde",
+    "payAtOffice": "Ofiste Öde",
+    "payNowSavings": "Şimdi Öde Kazancın",
+    "edit": "Düzenle"
+  },
+  "sideBanner": {
+    "noAdvancePayment": "Ön Ödeme Yoktur"
+  },
+  "mobileInfoPopup": {
+    "noAdvancePayment": "Ön Ödeme Yoktur",
+    "noDeposit": "Deposito Yoktur",
+    "notBroker": "Broker Değiliz"
+  },
+  "floatingButtons": {
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Merhaba Berg Rent A Car Alanya! Berg Rent A Car Alanya hakkında daha fazla bilgi almak istiyorum https://www.bergrentacar.com/"
+  },
+  "reservation": {
+    "extras": "Ekstra Ürünler",
+    "day": "gün",
+    "mandatory": "Zorunlu",
+    "total": "Toplam",
+    "summary": "Rezervasyon Özeti",
+    "pickup": "Alış",
+    "dropoff": "Dönüş",
+    "rentalPeriod": "Kiralama Süresi",
+    "vehicleRental": "Araç Kiralama",
+    "continue": "Devam Et",
+    "back": "Geri",
+    "reservationForm": "Rezervasyon Formu",
+    "personalInfo": "Kişisel Bilgiler",
+    "personalInfoSubtitle": "Kişisel bilgilerinizi düzenleyebilirsiniz",
+    "firstName": "Ad",
+    "lastName": "Soyad",
+    "nationality": "Uyruk",
+    "identityNumber": "TC Kimlik / Pasaport",
+    "dateOfBirth": "Doğum Tarihi",
+    "selectDateOfBirth": "Doğum tarihi seçin",
+    "phoneCountryCode": "Ülke Kodu",
+    "phoneNumber": "Telefon Numarası",
+    "searchCountry": "Ülke ara...",
+    "noCountryFound": "Ülke bulunamadı",
+    "searchPhoneCode": "Ülke kodu ara...",
+    "noPhoneCodeFound": "Ülke kodu bulunamadı",
+    "email": "E-posta Adresi",
+    "personalDataConsentText": "Berg Rentacar Müşterilerin Kişisel Verilerinin Korunması ve İşlenmesi Açık Rıza Metnini okudum, Kabul ediyorum",
+    "commercialElectronicConsentText": "Berg Rentacar Ticari Elektronik Onay Metnini okudum, kabul ediyorum.",
+    "paymentMethod": "Ödeme Yöntemi",
+    "paymentMethodSubtitle": "Ödeme yönteminizi seçin",
+    "payCashAtDelivery": "Teslimatta Nakit Öde",
+    "payCardAtDelivery": "Teslimatta KK ile Öde",
+    "payOnline": "Online Öde",
+    "licenseInfo": "Ehliyet Bilgileri",
+    "licenseInfoSubtitle": "Ehliyet bilgilerinizi tamamlayın",
+    "selectLicenseCountry": "Ehliyet ülkesi seçin",
+    "selectNationality": "Uyruk seçin",
+    "licenseNumber": "Ehliyet Numarası",
+    "licenseIssueDate": "Veriliş Tarihi",
+    "licenseExpiryDate": "Son Geçerlilik Tarihi",
+    "licenseCountry": "Ehliyet Ülkesi",
+    "minimumAgeError": "En az 21 yaşında olmalısınız.",
+    "invalidDateOfBirth": "Geçersiz doğum tarihi.",
+    "licenseAgeError": "Ehliyet en az 3 yaşında olmalıdır.",
+    "addressInfo": "Adres Bilgileri",
+    "addressInfoSubtitle": "Adres bilgilerinizi tamamlayın",
+    "address": "Adres",
+    "city": "Şehir",
+    "postalCode": "Posta Kodu",
+    "country": "Ülke",
+    "paymentInfo": "Ödeme Bilgileri",
+    "paymentInfoSubtitle": "Ödeme bilgilerinizi tamamlayın",
+    "cardNumber": "Kart Numarası",
+    "cardHolderName": "Kart Sahibi Adı",
+    "expiryMonth": "Ay",
+    "expiryYear": "Yıl",
+    "cvv": "CVV",
+    "importantInfo": "Rezervasyon ile İlgili Önemli Bilgiler",
+    "importantInfo1": "Araç teslimi için sürücü belgesi, TC kimlik numaralı sürücü belgesi/Latin alfabesi sürücü belgesi/pasaport, Latin alfabesi olmayan sürücü belgeleri için yeminli tercüme ve pasaport giriş damgası geçerliliği (6 aydan az) gereklidir.",
+    "importantInfo2": "Teminat tutarı araç grubuna göre değişiklik göstermektedir. Rezervasyonu yapan kişinin kredi kartı gereklidir. Araç aynı durumda teslim edilirse 7 gün içinde iade edilir. Rezervasyonu yapan kişinin teslim sırasında bulunması gerekmektedir.",
+    "rentalConditionsConsent": "Kiralama Koşullarını okudum, onaylıyorum.",
+    "readRentalConditions": "Kiralama Koşullarını Oku",
+    "rentalConditionsTitle": "Kiralama Koşulları",
+    "acceptConditions": "Koşulları Kabul Et",
+    "cancelReservation": "Rezervasyon İptal Et",
+    "rentalConditions": {
+      "generalTerms": "1. Genel Koşullar",
+      "generalTerms1": "Bu kiralama sözleşmesi, Berg Rentacar (kiralayan) ile müşteri (kiracı) arasında yapılmıştır.",
+      "generalTerms2": "Araç kiralama işlemi, müşterinin bu koşulları kabul etmesi ve gerekli belgeleri ibraz etmesi şartıyla gerçekleştirilir.",
+      "generalTerms3": "Kiralama süresi, teslim ve iade tarihleri rezervasyon sırasında belirlenir ve değiştirilemez.",
+      "requiredDocuments": "2. Gerekli Belgeler",
+      "doc1": "Geçerli sürücü belgesi (en az 1 yıl geçerlilik süresi)",
+      "doc2": "TC kimlik numaralı sürücü belgesi, Latin alfabesi sürücü belgesi veya pasaport",
+      "doc3": "Latin alfabesi olmayan sürücü belgeleri için yeminli tercüme",
+      "doc4": "Pasaport giriş damgası geçerliliği (6 aydan az olmamalı)",
+      "doc5": "Kredi kartı (teminat için)",
+      "depositPayment": "3. Teminat ve Ödeme",
+      "deposit1": "Teminat tutarı araç grubuna göre değişiklik göstermektedir.",
+      "deposit2": "Rezervasyonu yapan kişinin kredi kartı gereklidir.",
+      "deposit3": "Araç aynı durumda teslim edilirse teminat 7 gün içinde iade edilir.",
+      "deposit4": "Ödeme, teslimatta nakit, kredi kartı ile veya online olarak yapılabilir.",
+      "vehicleDelivery": "4. Araç Teslimi",
+      "delivery1": "Rezervasyonu yapan kişinin teslim sırasında bulunması gerekmektedir.",
+      "delivery2": "Araç teslimi sırasında hasar kontrolü yapılır ve tutanak tutulur.",
+      "delivery3": "Müşteri, aracın mevcut durumunu kontrol etmekle yükümlüdür.",
+      "vehicleReturn": "5. Araç İadesi",
+      "return1": "Araç, belirlenen tarih ve saatte iade edilmelidir.",
+      "return2": "Gecikme durumunda ek ücret uygulanır.",
+      "return3": "Araç, teslim edildiği konumdan farklı bir konuma iade edilirse ek ücret uygulanır.",
+      "return4": "Araç iade sırasında hasar kontrolü yapılır.",
+      "insuranceLiability": "6. Sigorta ve Sorumluluk",
+      "insurance1": "Araç, zorunlu trafik sigortası ile kiralanır.",
+      "insurance2": "Ek sigorta paketleri opsiyoneldir ve ek ücrete tabidir.",
+      "insurance3": "Müşteri, kaza ve hasarlardan sorumludur.",
+      "insurance4": "Alkol veya uyuşturucu etkisi altında araç kullanımı yasaktır.",
+      "cancellationRefund": "7. İptal ve İade",
+      "cancel1": "Rezervasyon iptalleri, iptal tarihine göre farklı ücretlendirilir.",
+      "cancel2": "48 saat öncesinden yapılan iptallerde tam iade yapılır.",
+      "cancel3": "48 saatten kısa süre önce yapılan iptallerde iade yapılmaz.",
+      "prohibitedUses": "8. Yasak Kullanımlar",
+      "prohibited1": "Araç, yasal olmayan amaçlarla kullanılamaz",
+      "prohibited2": "Araç, ticari amaçlı kullanılamaz",
+      "prohibited3": "Araç, sürücü belgesi olmayan kişiler tarafından kullanılamaz",
+      "prohibited4": "Araç, ülke sınırları dışına çıkarılamaz (izin verilmediği sürece)"
+    },
+    "completeReservation": "Rezervasyonu Tamamla",
+    "submitting": "Gönderiliyor...",
+    "success": "Başarılı",
+    "successMessage": "Rezervasyonunuz başarıyla tamamlandı!",
+    "error": "Hata",
+    "errorMessage": "Rezervasyon tamamlanamadı. Lütfen tekrar deneyin.",
+    "mandatoryExtrasRequired": "Lütfen zorunlu ekstra ürünleri seçin.",
+    "personalInfoRequired": "Lütfen tüm zorunlu kişisel bilgileri doldurun.",
+    "licenseInfoRequired": "Lütfen ehliyet bilgilerini doldurun.",
+    "addressInfoRequired": "Lütfen adres bilgilerini doldurun.",
+    "paymentInfoRequired": "Lütfen ödeme bilgilerini doldurun.",
+    "agreementsRequired": "Lütfen tüm sözleşmeleri kabul edin.",
+    "missingFields": "Lütfen şu alanları doldurun:",
+    "missingPaymentFields": "Lütfen şu ödeme bilgilerini doldurun:",
+    "invalidLicenseDate": "Geçersiz ehliyet tarihi.",
+    "locationDetails": "Alış / Dönüş Detayları",
+    "locationDetailsSubtitle": "Lokasyon tipine göre detay bilgileri",
+    "pickupDetails": "Alış Detayları",
+    "dropoffDetails": "İade Detayları",
+    "pickupFlightNumber": "Alış Uçuş Numarası",
+    "pickupFlightNumberPlaceholder": "Örn: TK1234",
+    "pickupFlightDescription": "Açıklama",
+    "pickupFlightDescriptionPlaceholder": "Uçuş ile ilgili ek bilgiler (opsiyonel)",
+    "dropoffFlightNumber": "İade Uçuş Numarası",
+    "dropoffFlightNumberPlaceholder": "Örn: TK1234",
+    "dropoffFlightDescription": "Açıklama",
+    "dropoffFlightDescriptionPlaceholder": "Uçuş ile ilgili ek bilgiler (opsiyonel)",
+    "pickupHotelName": "Alış Otel Adı",
+    "pickupHotelNamePlaceholder": "Otel adını giriniz",
+    "dropoffHotelName": "İade Otel Adı",
+    "dropoffHotelNamePlaceholder": "Otel adını giriniz",
+    "pickupAddress": "Alış Adresi",
+    "pickupAddressPlaceholder": "Alış adresini giriniz",
+    "dropoffAddress": "İade Adresi",
+    "dropoffAddressPlaceholder": "İade adresini giriniz"
+  },
+  "reservationSuccess": {
+    "title": "Rezervasyonunuz Başarıyla Tamamlandı!",
+    "description": "Rezervasyonunuz başarıyla tamamlandı. Detaylarınızı görüntüleyebilirsiniz.",
+    "subtitle": "Rezervasyon detaylarınız aşağıda yer almaktadır. E-posta adresinize onay mesajı gönderilmiştir.",
+    "reservationDetails": "Rezervasyon Detayları",
+    "reservationNumber": "Rezervasyon No:",
+    "vehicle": "Araç",
+    "totalPrice": "Toplam Tutar",
+    "pickupDetails": "Alış Bilgileri",
+    "dropoffDetails": "İade Bilgileri",
+    "location": "Konum",
+    "date": "Tarih",
+    "time": "Saat",
+    "customerInfo": "İletişim Bilgileri",
+    "customerName": "Ad Soyad",
+    "importantInfo": "Önemli Bilgiler",
+    "info1": "Rezervasyon onayınız e-posta adresinize gönderilmiştir.",
+    "info2": "Rezervasyonunuzu iptal etmek veya değiştirmek için lütfen bizimle iletişime geçin.",
+    "info3": "Alış günü yanınızda geçerli ehliyet ve kimlik belgenizi bulundurmayı unutmayın.",
+    "info4": "Sorularınız için 7/24 müşteri hizmetlerimizden destek alabilirsiniz.",
+    "backToHome": "Ana Sayfaya Dön",
+    "viewReservations": "Rezervasyonlarımı Görüntüle",
+    "download": "Yazdır / İndir"
+  },
+  "aydinlatmaMetni": {
+    "title": "Aydınlatma Metni",
+    "subtitle": "6698 sayılı Kişisel Verilerin Korunması Kanunu uyarınca bilgilendirme",
+    "dataController": {
+      "title": "1. Veri Sorumlusu",
+      "content1": "Berg Rent a Car olarak, 6698 sayılı Kişisel Verilerin Korunması Kanunu (\"KVKK\") uyarınca, kişisel verilerinizin işlenmesi konusunda aşağıdaki bilgileri sizlere sunmaktayız.",
+      "dataController": "Veri Sorumlusu:",
+      "address": "Adres:",
+      "email": "E-posta:",
+      "phone": "Telefon:",
+      "contactInfo": "İletişim bilgileri ayarlardan alınacaktır"
+    },
+    "processedData": {
+      "title": "2. İşlenen Kişisel Veriler",
+      "content1": "Hizmetlerimizi sunabilmek için aşağıdaki kişisel verileriniz işlenmektedir:",
+      "identityInfo": "Kimlik Bilgileri:",
+      "identityInfoDesc": "Ad, soyad, T.C. kimlik numarası, doğum tarihi",
+      "contactInfo": "İletişim Bilgileri:",
+      "contactInfoDesc": "Telefon numarası, e-posta adresi, adres bilgileri",
+      "licenseInfo": "Ehliyet Bilgileri:",
+      "licenseInfoDesc": "Ehliyet numarası, veriliş tarihi, son geçerlilik tarihi",
+      "reservationInfo": "Rezervasyon Bilgileri:",
+      "reservationInfoDesc": "Rezervasyon tarihleri, araç tercihleri, ödeme bilgileri",
+      "technicalData": "Teknik Veriler:",
+      "technicalDataDesc": "IP adresi, çerez bilgileri, tarayıcı bilgileri"
+    },
+    "processingPurposes": {
+      "title": "3. Kişisel Verilerin İşlenme Amaçları",
+      "content1": "Kişisel verileriniz aşağıdaki amaçlarla işlenmektedir:",
+      "purpose1": "Araç kiralama hizmetlerinin sunulması ve rezervasyon işlemlerinin gerçekleştirilmesi",
+      "purpose2": "Müşteri ilişkilerinin yönetilmesi ve iletişim faaliyetlerinin yürütülmesi",
+      "purpose3": "Yasal yükümlülüklerin yerine getirilmesi",
+      "purpose4": "Hizmet kalitesinin artırılması ve müşteri memnuniyetinin sağlanması",
+      "purpose5": "Pazarlama ve tanıtım faaliyetlerinin yürütülmesi (açık rıza ile)"
+    },
+    "dataTransfer": {
+      "title": "4. Kişisel Verilerin Aktarılması",
+      "content1": "Kişisel verileriniz, hizmetlerimizin sunulması ve yasal yükümlülüklerin yerine getirilmesi amacıyla aşağıdaki üçüncü kişilere aktarılabilir:",
+      "transfer1": "Ödeme işlemleri için ödeme hizmet sağlayıcıları",
+      "transfer2": "Yasal yükümlülüklerin yerine getirilmesi için kamu kurum ve kuruluşları",
+      "transfer3": "Hizmet sağlayıcılar ve iş ortaklarımız (veri işleme sözleşmesi ile)"
+    },
+    "dataSubjectRights": {
+      "title": "5. Kişisel Veri Sahibinin Hakları",
+      "content1": "KVKK'nın 11. maddesi uyarınca, kişisel veri sahibi olarak aşağıdaki haklara sahipsiniz:",
+      "right1": "Kişisel verilerinizin işlenip işlenmediğini öğrenme",
+      "right2": "İşlenmişse buna ilişkin bilgi talep etme",
+      "right3": "İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme",
+      "right4": "Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme",
+      "right5": "Eksik veya yanlış işlenmişse düzeltilmesini isteme",
+      "right6": "KVKK'da öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme",
+      "right7": "Düzeltme, silme, yok etme işlemlerinin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme",
+      "right8": "İşlenen verilerin münhasıran otomatik sistemler ile analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme",
+      "right9": "Kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme"
+    },
+    "contact": {
+      "title": "6. İletişim",
+      "content1": "Yukarıda belirtilen haklarınızı kullanmak için, kimliğinizi tespit edici belgelerinizle birlikte yazılı başvurunuzu yukarıda belirtilen adresimize gönderebilir veya e-posta yoluyla iletebilirsiniz."
+    }
+  },
+  "cerezAydinlatmaPolitikasi": {
+    "title": "Çerez Aydınlatma Politikası",
+    "subtitle": "Web sitemizde kullanılan çerezler hakkında bilgilendirme",
+    "whatIsCookie": {
+      "title": "Çerez Nedir?",
+      "content1": "Çerezler (cookies), web sitelerini ziyaret ettiğinizde tarayıcınız tarafından cihazınıza kaydedilen küçük metin dosyalarıdır. Bu dosyalar, web sitesinin düzgün çalışmasını sağlar ve kullanıcı deneyimini iyileştirir.",
+      "content2": "Berg Rent a Car web sitesi olarak, hizmetlerimizi sunabilmek ve kullanıcı deneyimini geliştirmek amacıyla çeşitli çerezler kullanmaktayız."
+    },
+    "cookieTypes": {
+      "title": "Kullandığımız Çerez Türleri",
+      "necessary": {
+        "title": "1. Zorunlu Çerezler",
+        "content1": "Web sitemizin temel işlevlerinin çalışması için gerekli olan çerezlerdir. Bu çerezler olmadan web sitemiz düzgün çalışamaz.",
+        "item1": "Oturum yönetimi çerezleri",
+        "item2": "Güvenlik çerezleri",
+        "item3": "Dil tercihi çerezleri"
+      },
+      "performance": {
+        "title": "2. Performans Çerezleri",
+        "content1": "Web sitemizin performansını analiz etmek ve kullanıcı deneyimini iyileştirmek için kullanılan çerezlerdir.",
+        "item1": "Analitik çerezler (Google Analytics vb.)",
+        "item2": "Kullanım istatistikleri çerezleri"
+      },
+      "functionality": {
+        "title": "3. İşlevsellik Çerezleri",
+        "content1": "Web sitemizin gelişmiş özelliklerini ve kişiselleştirmeyi sağlayan çerezlerdir.",
+        "item1": "Kullanıcı tercihleri çerezleri",
+        "item2": "Rezervasyon bilgileri çerezleri"
+      },
+      "marketing": {
+        "title": "4. Pazarlama Çerezleri",
+        "content1": "Kullanıcılara daha uygun reklamlar göstermek ve pazarlama faaliyetlerini yürütmek için kullanılan çerezlerdir. Bu çerezler sadece açık rızanız ile kullanılır.",
+        "item1": "Reklam çerezleri",
+        "item2": "Takip çerezleri"
+      }
+    },
+    "cookieDurations": {
+      "title": "Çerez Süreleri",
+      "content1": "Kullandığımız çerezler, oturum çerezleri (tarayıcı kapatıldığında silinir) ve kalıcı çerezler (belirli bir süre boyunca cihazınızda kalır) olmak üzere iki türdedir.",
+      "session": "Oturum Çerezleri:",
+      "sessionDesc": "Tarayıcı kapatıldığında otomatik olarak silinir",
+      "persistent": "Kalıcı Çerezler:",
+      "persistentDesc": "30 gün ile 2 yıl arasında değişen sürelerde saklanır"
+    },
+    "manageCookies": {
+      "title": "Çerez Ayarlarınızı Yönetme",
+      "content1": "Tarayıcı ayarlarınızdan çerezleri yönetebilir veya silebilirsiniz. Ancak, bazı çerezleri devre dışı bırakmanız web sitemizin bazı özelliklerinin düzgün çalışmamasına neden olabilir.",
+      "content2": "Çerez ayarlarınızı yönetmek için:",
+      "item1": "Tarayıcınızın ayarlar menüsünden \"Çerezler\" veya \"Cookies\" bölümüne gidin",
+      "item2": "Web sitemizdeki \"Çerez Ayarları\" sayfasını ziyaret edin"
+    },
+    "thirdPartyCookies": {
+      "title": "Üçüncü Taraf Çerezler",
+      "content1": "Web sitemizde, hizmetlerimizi iyileştirmek ve analiz yapmak amacıyla üçüncü taraf hizmet sağlayıcıların çerezleri de kullanılmaktadır. Bu çerezler:",
+      "item1": "Google Analytics (web sitesi analizi)",
+      "item2": "Sosyal medya platformları (paylaşım butonları için)"
+    },
+    "updates": {
+      "title": "Güncellemeler",
+      "content1": "Bu Çerez Aydınlatma Politikası, yasal düzenlemelerdeki değişiklikler veya hizmetlerimizdeki güncellemeler nedeniyle zaman zaman güncellenebilir. Önemli değişiklikler durumunda sizleri bilgilendireceğiz."
+    },
+    "contact": {
+      "title": "İletişim",
+      "content1": "Çerez politikamız hakkında sorularınız için bizimle iletişime geçebilirsiniz."
+    }
+  },
+  "kvkPolitikasi": {
+    "title": "Kişisel Verilerin Korunması Politikası",
+    "subtitle": "6698 sayılı Kişisel Verilerin Korunması Kanunu uyarınca",
+    "generalInfo": {
+      "title": "Genel Bilgiler",
+      "content1": "Berg Rent a Car olarak, 6698 sayılı Kişisel Verilerin Korunması Kanunu (\"KVKK\") ve ilgili mevzuat hükümlerine tam uyum sağlamak için gerekli tüm teknik ve idari tedbirleri almaktayız.",
+      "content2": "Kişisel verilerinizin güvenliği ve gizliliği bizim için önceliklidir. Bu politika, kişisel verilerinizin nasıl toplandığı, işlendiği, saklandığı ve korunduğu hakkında sizleri bilgilendirmek amacıyla hazırlanmıştır."
+    },
+    "dataSecurity": {
+      "title": "Veri Güvenliği",
+      "content1": "Kişisel verilerinizin güvenliğini sağlamak için aşağıdaki teknik ve idari tedbirleri almaktayız:",
+      "item1": "SSL sertifikası ile şifreli veri iletimi",
+      "item2": "Güvenli sunucu altyapısı ve düzenli güvenlik güncellemeleri",
+      "item3": "Erişim kontrolü ve yetkilendirme mekanizmaları",
+      "item4": "Düzenli veri yedekleme ve kurtarma prosedürleri",
+      "item5": "Personel eğitimleri ve bilinçlendirme faaliyetleri",
+      "item6": "Güvenlik açıklarının tespiti ve düzeltilmesi için düzenli kontroller"
+    },
+    "dataRetention": {
+      "title": "Veri Saklama Süreleri",
+      "content1": "Kişisel verileriniz, işleme amacının gerektirdiği süre boyunca ve yasal saklama yükümlülüklerimiz çerçevesinde saklanmaktadır:",
+      "reservation": "Rezervasyon Bilgileri:",
+      "reservationDesc": "Rezervasyon tamamlandıktan sonra 10 yıl",
+      "contact": "Müşteri İletişim Bilgileri:",
+      "contactDesc": "Hizmet ilişkisi sona erdikten sonra 10 yıl",
+      "marketing": "Pazarlama İzinleri:",
+      "marketingDesc": "İptal edilene kadar veya 3 yıl",
+      "technical": "Teknik Veriler:",
+      "technicalDesc": "2 yıl"
+    },
+    "dataBreach": {
+      "title": "Veri İhlali Bildirimi",
+      "content1": "Kişisel verilerinizin güvenliğini etkileyebilecek herhangi bir ihlal durumunda, KVKK'nın 12. maddesi uyarınca:",
+      "item1": "İhlal durumu tespit edildiği andan itibaren en geç 72 saat içinde Kişisel Verileri Koruma Kurumu'na bildirilir",
+      "item2": "İhlal, kişilerin hak ve özgürlükleri açısından yüksek risk oluşturuyorsa, ilgili kişilere de bildirilir",
+      "item3": "Gerekli önlemler alınır ve ihlalin tekrarlanmasını önlemek için sistemler güncellenir"
+    },
+    "legalBasis": {
+      "title": "Veri İşleme Hukuki Sebepleri",
+      "content1": "Kişisel verileriniz aşağıdaki hukuki sebeplerle işlenmektedir:",
+      "item1": "Hizmet sözleşmesinin kurulması ve ifası",
+      "item2": "Yasal yükümlülüklerin yerine getirilmesi",
+      "item3": "Meşru menfaatlerimiz (hizmet kalitesinin artırılması, güvenliğin sağlanması)",
+      "item4": "Açık rızanız (pazarlama faaliyetleri için)"
+    },
+    "internationalTransfer": {
+      "title": "Uluslararası Veri Transferi",
+      "content1": "Kişisel verileriniz, hizmetlerimizin sunulması amacıyla yurt dışına aktarılabilir. Bu durumda, KVKK'nın 9. maddesi uyarınca:",
+      "item1": "Aktarım yapılacak ülkenin yeterli koruma seviyesine sahip olması",
+      "item2": "Yeterli koruma yoksa, uygun güvencelerin sağlanması (sözleşmeler, bağlayıcı kurumsal kurallar vb.)",
+      "item3": "Açık rızanızın alınması"
+    },
+    "updates": {
+      "title": "Değişiklikler ve Güncellemeler",
+      "content1": "Bu politika, yasal düzenlemelerdeki değişiklikler, teknolojik gelişmeler veya iş süreçlerimizdeki güncellemeler nedeniyle zaman zaman revize edilebilir. Önemli değişiklikler durumunda web sitemiz üzerinden sizleri bilgilendireceğiz."
+    },
+    "contact": {
+      "title": "İletişim ve Başvuru",
+      "content1": "KVKK kapsamındaki haklarınızı kullanmak veya politika hakkında sorularınız için:",
+      "item1": "Yazılı başvurunuzu adresimize gönderebilirsiniz",
+      "item2": "E-posta yoluyla bizimle iletişime geçebilirsiniz",
+      "item3": "Kişisel Verileri Koruma Kurumu'na şikayette bulunabilirsiniz"
+    }
+  },
+  "yonetimBilgiSistemleriPolitikasi": {
+    "title": "Yönetim Bilgi Sistemleri Politikası",
+    "subtitle": "Bilgi güvenliği ve sistem yönetimi standartları",
+    "scope": {
+      "title": "Politika Kapsamı",
+      "content1": "Bu politika, Berg Rent a Car'ın bilgi sistemleri, veri güvenliği ve teknoloji altyapısının yönetimi ile ilgili temel prensipleri ve standartları belirlemektedir.",
+      "content2": "Politika, tüm bilgi sistemleri, ağ altyapısı, sunucular, veritabanları, uygulamalar ve dijital varlıklarımızı kapsamaktadır."
+    },
+    "securityPrinciples": {
+      "title": "Bilgi Güvenliği Prensipleri",
+      "confidentiality": {
+        "title": "1. Gizlilik (Confidentiality)",
+        "content": "Bilgilerin yetkisiz kişiler tarafından erişilememesi ve ifşa edilmemesi için gerekli önlemler alınmaktadır."
+      },
+      "integrity": {
+        "title": "2. Bütünlük (Integrity)",
+        "content": "Bilgilerin yetkisiz değişikliklerden korunması ve doğruluğunun sağlanması için kontroller yapılmaktadır."
+      },
+      "availability": {
+        "title": "3. Erişilebilirlik (Availability)",
+        "content": "Bilgi sistemlerinin yetkili kullanıcılar tarafından ihtiyaç duyulduğunda erişilebilir olması sağlanmaktadır."
+      }
+    },
+    "technicalMeasures": {
+      "title": "Teknik Güvenlik Önlemleri",
+      "content1": "Bilgi sistemlerimizin güvenliğini sağlamak için aşağıdaki teknik önlemler alınmaktadır:",
+      "item1": "Güçlü şifreleme protokolleri (SSL/TLS) kullanımı",
+      "item2": "Güvenlik duvarları ve ağ segmentasyonu",
+      "item3": "Düzenli güvenlik güncellemeleri ve yamalar",
+      "item4": "İstilayı tespit ve önleme sistemleri (IDS/IPS)",
+      "item5": "Düzenli güvenlik taramaları ve penetrasyon testleri",
+      "item6": "Otomatik yedekleme ve kurtarma sistemleri",
+      "item7": "Erişim loglarının tutulması ve izlenmesi"
+    },
+    "accessControl": {
+      "title": "Erişim Kontrolü",
+      "content1": "Bilgi sistemlerine erişim, \"ihtiyaç duyduğu kadar\" (need-to-know) prensibi ile sınırlandırılmıştır:",
+      "item1": "Kullanıcı kimlik doğrulama ve yetkilendirme mekanizmaları",
+      "item2": "Güçlü şifre politikaları ve çok faktörlü kimlik doğrulama",
+      "item3": "Rol tabanlı erişim kontrolü (RBAC)",
+      "item4": "Düzenli erişim hakları gözden geçirmeleri",
+      "item5": "İşten ayrılan personelin erişim haklarının derhal iptal edilmesi"
+    },
+    "backupRecovery": {
+      "title": "Veri Yedekleme ve Kurtarma",
+      "content1": "Kritik verilerin kaybını önlemek için:",
+      "item1": "Günlük otomatik yedekleme işlemleri",
+      "item2": "Yedeklerin güvenli ve ayrı konumlarda saklanması",
+      "item3": "Düzenli yedek geri yükleme testleri",
+      "item4": "Felaket kurtarma planları ve prosedürleri",
+      "item5": "Maksimum kabul edilebilir kesinti sürelerinin belirlenmesi (RTO/RPO)"
+    },
+    "incidentResponse": {
+      "title": "Olay Müdahale",
+      "content1": "Güvenlik olaylarına müdahale için:",
+      "item1": "Olay müdahale ekibi ve sorumluluklarının belirlenmesi",
+      "item2": "Olay tespit ve bildirim prosedürleri",
+      "item3": "Olay analizi ve kök neden analizi",
+      "item4": "Olay sonrası iyileştirme faaliyetleri",
+      "item5": "Düzenli olay müdahale tatbikatları"
+    },
+    "staffTraining": {
+      "title": "Personel Eğitimi ve Farkındalık",
+      "content1": "Tüm personelimiz bilgi güvenliği konusunda:",
+      "item1": "Düzenli eğitimler almakta",
+      "item2": "Güvenlik politikaları hakkında bilgilendirilmekte",
+      "item3": "Şüpheli aktiviteleri bildirme konusunda teşvik edilmekte",
+      "item4": "Farkındalık kampanyalarına katılmaktadır"
+    },
+    "thirdParty": {
+      "title": "Üçüncü Taraf Hizmet Sağlayıcılar",
+      "content1": "Üçüncü taraf hizmet sağlayıcılarla çalışırken:",
+      "item1": "Güvenlik gereksinimlerinin sözleşmelerde belirtilmesi",
+      "item2": "Düzenli güvenlik denetimleri ve değerlendirmeleri",
+      "item3": "Veri işleme sözleşmelerinin yapılması",
+      "item4": "Hizmet sağlayıcıların güvenlik standartlarının kontrol edilmesi"
+    },
+    "updates": {
+      "title": "Politika Güncellemeleri",
+      "content1": "Bu politika, teknolojik gelişmeler, yasal değişiklikler ve iş gereksinimlerine göre düzenli olarak gözden geçirilir ve güncellenir. Tüm güncellemeler ilgili personel ile paylaşılır."
+    },
+    "contact": {
+      "title": "İletişim",
+      "content1": "Bu politika hakkında sorularınız veya güvenlik endişeleriniz için bizimle iletişime geçebilirsiniz."
+    }
+  },
+  "cerezAyarlari": {
+    "title": "Çerez Ayarları",
+    "subtitle": "Çerez tercihlerinizi yönetin ve kontrol edin",
+    "info": "Web sitemizde kullanılan çerezleri kategorilere ayırdık. Her kategori için tercihinizi belirleyebilir ve çerez kullanımını kontrol edebilirsiniz. Zorunlu çerezler web sitemizin çalışması için gereklidir ve kapatılamaz.",
+    "categories": "Çerez Kategorileri",
+    "necessary": {
+      "title": "Zorunlu Çerezler",
+      "description": "Web sitemizin temel işlevlerinin çalışması için gerekli çerezler. Bu çerezler olmadan web sitemiz düzgün çalışamaz."
+    },
+    "performance": {
+      "title": "Performans Çerezleri",
+      "description": "Web sitemizin performansını analiz etmek ve kullanıcı deneyimini iyileştirmek için kullanılan çerezler."
+    },
+    "functionality": {
+      "title": "İşlevsellik Çerezleri",
+      "description": "Web sitemizin gelişmiş özelliklerini ve kişiselleştirmeyi sağlayan çerezler."
+    },
+    "marketing": {
+      "title": "Pazarlama Çerezleri",
+      "description": "Kullanıcılara daha uygun reklamlar göstermek ve pazarlama faaliyetlerini yürütmek için kullanılan çerezler."
+    },
+    "acceptAll": "Tümünü Kabul Et",
+    "rejectAll": "Sadece Zorunluları Kabul Et",
+    "save": "Ayarları Kaydet",
+    "settingsSaved": "Ayarlar Kaydedildi",
+    "settingsSavedDesc": "Çerez tercihleriniz başarıyla kaydedildi.",
+    "allAccepted": "Tüm Çerezler Kabul Edildi",
+    "allAcceptedDesc": "Tüm çerez tercihleri aktif edildi.",
+    "settingsUpdated": "Ayarlar Güncellendi",
+    "settingsUpdatedDesc": "Sadece zorunlu çerezler aktif.",
+    "moreInfo": "Daha Fazla Bilgi",
+    "moreInfoContent": "Çerezler hakkında daha detaylı bilgi için:",
+    "moreInfoItem1": "Çerez Aydınlatma Politikası sayfasını ziyaret edebilirsiniz",
+    "moreInfoItem2": "Tarayıcı ayarlarınızdan çerezleri yönetebilir veya silebilirsiniz",
+    "moreInfoItem3": "Çerez ayarlarınızı istediğiniz zaman bu sayfadan değiştirebilirsiniz"
+  },
+  "seo": {
+    "home": {
+      "title": "Berg Rent a Car | Türkiye'nin En İyi Araç Kiralama Şirketi | ANTALYA | ALANYA",
+      "description": "Berg Rent a Car - Türkiye'nin en güvenilir araç kiralama şirketi. Antalya, Alanya ve Türkiye'nin her yerinde araç kiralama. En iyi fiyatlar, kaliteli hizmet, geniş araç filosu. Fiyatları karşılaştırın ve seyahatiniz için mükemmel aracı bulun.",
+      "keywords": "araç kiralama, rent a car, türkiye, antalya, alanya, berg rent a car, car rental, araç kiralama karşılaştırma, ucuz araç kiralama"
+    }
+  }
+}
+

@@ -1,0 +1,67 @@
+# MIME Types for JavaScript modules and assets
+<IfModule mod_mime.c>
+  AddType application/javascript js mjs
+  AddType application/wasm wasm
+  AddType text/css css
+  AddType image/svg+xml svg svgz
+  AddType application/json json
+  AddType application/manifest+json webmanifest
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Live sitemap from API (destinations + blogs)
+  RewriteCond %{DOCUMENT_ROOT}/sitemap.php -f
+  RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+  # Never rewrite hashed build assets
+  RewriteRule ^assets/ - [L]
+
+  # www → non-www
+  RewriteCond %{HTTP_HOST} ^www\.bergrentacar\.com [NC]
+  RewriteRule ^(.*)$ https://bergrentacar.com/$1 [R=301,L]
+
+  # Existing files and directories (assets, prerendered HTML)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Root → /tr/
+  RewriteRule ^$ /tr/ [R=301,L]
+
+  # Legacy unprefixed routes → /tr/...
+  RewriteRule ^(destination|destinations|reservations|help-center|contact-us|faq|live-chat|company-info|vehicles|aydinlatma-metni|cerez-aydinlatma-politikasi|kvk-politikasi|yonetim-bilgi-sistemleri-politikasi|cerez-ayarlari|reservation-success|blog|login|register|profile|forgot-password|reset-password)(/.*)?$ /tr/$1$2 [R=301,L]
+
+  # Locale homepage: serve prerendered file when present
+  RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
+  RewriteRule ^(tr|en|de|ru)/?$ /$1/index.html [L]
+
+  RewriteRule ^(tr|en|de|ru)/?$ /index.html [L]
+
+  # Static marketing pages
+  RewriteCond %{DOCUMENT_ROOT}/$1/$2/index.html -f
+  RewriteRule ^(tr|en|de|ru)/(contact-us|faq|help-center|company-info|destinations|aydinlatma-metni|cerez-aydinlatma-politikasi|kvk-politikasi|yonetim-bilgi-sistemleri-politikasi)/?$ /$1/$2/index.html [L]
+
+  RewriteRule ^(tr|en|de|ru)/(contact-us|faq|help-center|company-info|destinations|aydinlatma-metni|cerez-aydinlatma-politikasi|kvk-politikasi|yonetim-bilgi-sistemleri-politikasi|cerez-ayarlari|live-chat|login|register|profile|forgot-password|reset-password|reservations|reservation-success)/?$ /index.html [L]
+
+  # Nested SPA routes
+  RewriteCond %{DOCUMENT_ROOT}/$1/destination/$2/index.html -f
+  RewriteRule ^(tr|en|de|ru)/destination/([^/]+)/?$ /$1/destination/$2/index.html [L]
+
+  RewriteRule ^(tr|en|de|ru)/destination/[^/]+/?$ /index.html [L]
+  RewriteRule ^(tr|en|de|ru)/blog/[^/]+/?$ /index.html [L]
+  RewriteRule ^(tr|en|de|ru)/vehicles/search/?$ /index.html [L]
+</IfModule>
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
