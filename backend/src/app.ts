@@ -65,7 +65,7 @@ export const createApp = (): Express => {
   // Development'ta: src/app.ts -> public
   let publicDir: string;
   if (__dirname.includes('dist')) {
-    // Production: dist/app.js -> ../public (Dockerfile'da public klasörü /app/public'e kopyalanır)
+    // Production: dist/app.js -> ../public
     publicDir = path.join(__dirname, '../public');
     logger.info(`[APP] Production mode - __dirname: ${__dirname}, publicDir: ${publicDir}`);
   } else {
