@@ -22,7 +22,7 @@ export const apiDocumentation = {
       variables: {
         tenant: {
           default: 'berg',
-          description: 'Tenant slug (e.g., berg, sunset)',
+          description: 'Tenant slug (e.g., berg)',
         },
       },
     },
@@ -32,7 +32,7 @@ export const apiDocumentation = {
       variables: {
         tenant: {
           default: 'berg',
-          description: 'Tenant slug (e.g., berg, sunset)',
+          description: 'Tenant slug (e.g., berg)',
         },
       },
     },

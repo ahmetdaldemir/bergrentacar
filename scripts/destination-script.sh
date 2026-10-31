@@ -9,8 +9,8 @@
 #   ./destination-script.sh <tenant-slug> [remote-host] [remote-user] [remote-path]
 #
 # Example:
-#   ./destination-script.sh sunset
-#   ./destination-script.sh sunset "$REMOTE_HOST" "$REMOTE_USER" "$REMOTE_PATH"
+#   ./destination-script.sh berg
+#   ./destination-script.sh berg "$REMOTE_HOST" "$REMOTE_USER" "$REMOTE_PATH"
 
 set -e
 
@@ -29,8 +29,8 @@ if [ -z "$1" ]; then
     echo "  ./destination-script.sh <tenant-slug> [remote-host] [remote-user] [remote-path]"
     echo ""
     echo "Example:"
-    echo "  ./destination-script.sh sunset"
-    echo "  ./destination-script.sh sunset \"\$REMOTE_HOST\" \"\$REMOTE_USER\" \"\$REMOTE_PATH\""
+    echo "  ./destination-script.sh berg"
+    echo "  ./destination-script.sh berg \"\$REMOTE_HOST\" \"\$REMOTE_USER\" \"\$REMOTE_PATH\""
     exit 1
 fi
 

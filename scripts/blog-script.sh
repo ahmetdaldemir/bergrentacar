@@ -9,8 +9,8 @@
 #   ./blog-script.sh <tenant-slug> [remote-host] [remote-user] [remote-path]
 #
 # Example:
-#   ./blog-script.sh sunset
-#   ./blog-script.sh sunset "$REMOTE_HOST" "$REMOTE_USER" "$REMOTE_PATH"
+#   ./blog-script.sh berg
+#   ./blog-script.sh berg "$REMOTE_HOST" "$REMOTE_USER" "$REMOTE_PATH"
 
 set -e
 
@@ -29,8 +29,8 @@ if [ -z "$1" ]; then
     echo "  ./blog-script.sh <tenant-slug> [remote-host] [remote-user] [remote-path]"
     echo ""
     echo "Example:"
-    echo "  ./blog-script.sh sunset"
-    echo "  ./blog-script.sh sunset \"\$REMOTE_HOST\" \"\$REMOTE_USER\" \"\$REMOTE_PATH\""
+    echo "  ./blog-script.sh berg"
+    echo "  ./blog-script.sh berg \"\$REMOTE_HOST\" \"\$REMOTE_USER\" \"\$REMOTE_PATH\""
     exit 1
 fi
 

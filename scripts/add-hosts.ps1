@@ -21,7 +21,6 @@ Write-Host "  Notepad'i yonetici olarak acin" -ForegroundColor Cyan
 Write-Host "  C:\Windows\System32\drivers\etc\hosts dosyasini acin" -ForegroundColor Cyan
     Write-Host "  Sonuna sunu ekleyin:" -ForegroundColor Cyan
     Write-Host "    127.0.0.1 berg.local.saastour360.test" -ForegroundColor Green
-    Write-Host "    127.0.0.1 sunset.local.saastour360.test" -ForegroundColor Green
     Write-Host "    127.0.0.1 traefik.local.saastour360.test" -ForegroundColor Green
     Write-Host ""
     exit 1
@@ -30,7 +29,6 @@ Write-Host "  C:\Windows\System32\drivers\etc\hosts dosyasini acin" -ForegroundC
 $hostsPath = "C:\Windows\System32\drivers\etc\hosts"
 $entries = @(
     "127.0.0.1 berg.local.saastour360.test",
-    "127.0.0.1 sunset.local.saastour360.test",
     "127.0.0.1 traefik.local.saastour360.test"
 )
 

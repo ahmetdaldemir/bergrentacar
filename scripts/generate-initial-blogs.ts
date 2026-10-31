@@ -10,7 +10,7 @@
  *   ts-node scripts/generate-initial-blogs.ts <tenant-slug>
  * 
  * Example:
- *   ts-node scripts/generate-initial-blogs.ts sunset
+ *   ts-node scripts/generate-initial-blogs.ts berg
  */
 
 import { AppDataSource } from '../backend/src/config/data-source';
@@ -204,7 +204,7 @@ const tenantSlug = process.argv[2];
 if (!tenantSlug) {
   console.error('❌ Error: Tenant slug is required');
   console.error('Usage: ts-node scripts/generate-initial-blogs.ts <tenant-slug>');
-  console.error('Example: ts-node scripts/generate-initial-blogs.ts sunset');
+  console.error('Example: ts-node scripts/generate-initial-blogs.ts berg');
   process.exit(1);
 }
 

@@ -10,7 +10,7 @@
  *   ts-node scripts/generate-initial-destinations.ts <tenant-slug>
  * 
  * Example:
- *   ts-node scripts/generate-initial-destinations.ts sunset
+ *   ts-node scripts/generate-initial-destinations.ts berg
  */
 
 import { AppDataSource } from '../backend/src/config/data-source';
@@ -194,7 +194,7 @@ const tenantSlug = process.argv[2];
 if (!tenantSlug) {
   console.error('❌ Error: Tenant slug is required');
   console.error('Usage: ts-node scripts/generate-initial-destinations.ts <tenant-slug>');
-  console.error('Example: ts-node scripts/generate-initial-destinations.ts sunset');
+  console.error('Example: ts-node scripts/generate-initial-destinations.ts berg');
   process.exit(1);
 }
 
