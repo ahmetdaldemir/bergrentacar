@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import fs from "fs";
 import path from "path";
 
-const UPLOADS_ROOT = path.resolve(__dirname, "../backups/bergrentacar/uploads");
+const UPLOADS_ROOT = path.resolve(__dirname, "../uploads");
 const IMAGE_TYPES: Record<string, string> = {
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",

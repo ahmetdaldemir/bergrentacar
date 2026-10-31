@@ -76,15 +76,13 @@ backups/*
 !backups/bergrentacar/
 !backups/bergrentacar/**
 
-# Uploads (runtime data)
-uploads/
-**/uploads/*
+# Nested runtime upload dirs stay local; root uploads/ is tracked
+backend/public/uploads/*
+backend/dist/public/uploads/*
+backend/src/public/uploads/*
 !**/uploads/.gitkeep
 !backups/bergrentacar/uploads/
 !backups/bergrentacar/uploads/**
-backend/public/uploads/*
-backend/dist/public/uploads/*
-!backend/public/uploads/.gitkeep
 
 # Mobile
 mobile/.expo/
