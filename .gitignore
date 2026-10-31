@@ -71,13 +71,17 @@ docker-compose.override.yml
 *.sqlite3
 *.db
 
-# Tenant data backup (customer data, not for git)
-backups/
+# Other tenant backups stay local; bergrentacar backup is tracked
+backups/*
+!backups/bergrentacar/
+!backups/bergrentacar/**
 
-# Uploads (production data)
+# Uploads (runtime data)
 uploads/
 **/uploads/*
 !**/uploads/.gitkeep
+!backups/bergrentacar/uploads/
+!backups/bergrentacar/uploads/**
 backend/public/uploads/*
 backend/dist/public/uploads/*
 !backend/public/uploads/.gitkeep
